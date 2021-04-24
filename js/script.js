@@ -15,7 +15,7 @@ function add_item(str) {
     // btn.disabled = true;
 };
 
-function disable(){
-    const btn = document.querySelector('button');
-    btn.disabled = true;
-}
+// function disable(){
+//     const btn = document.querySelector('button');
+//     btn.disabled = true;
+// }
