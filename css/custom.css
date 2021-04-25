@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fafafa;
+}
+
+.container-home {
+    margin: 100px auto;
+}
+
+.container-home .text-container h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ff005c;
+}
+
+.container-home .text-container p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #374955;
+}
+
+.container-home .text-container a.btn {
+    margin: 10px 0;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background: #ffc93c;
+}
+
+.container-food h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ff005c;
+}
+
+.container-food p {
+    font-size: 30px;
+    font-weight: 500;
+    color: #7868e6;
+}
+
+.card {
+    background-color: #d4cfcf;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}

@@ -1,0 +1,53 @@
+/* Main Font in (style.css) */
+
+/* All Custom Fonts in (style.css) */
+/* Add / Change if required! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Loader Section Styles Start */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fafafa;
+    z-index: 9999;
+    transition: all 0.7s ease;
+}
+
+.loader {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.loader object {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+svg.loader {
+    margin: auto;
+    background: transparent;
+    display: block;
+}
+
+svg.loader circle {
+    fill: none;
+    stroke-width: 5;
+}
+
+svg.loader circle.circle1 {
+    stroke: #20fdee;
+}
+svg.loader circle.circle2 {
+    stroke: #0075f6;
+}
+svg.loader circle.circle3 {
+    stroke: #ff005c;
+}

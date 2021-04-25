@@ -1,40 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>FoodMate || My Cart</title>
+        <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FoodMate</title>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        />
+
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/loader.css" />
         <link rel="stylesheet" href="./css/style.css" />
+
+        <script
+            defer
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        ></script>
+        <script defer src="./js/cartItem.js"></script>
+        <script defer src="./js/index.js"></script>
     </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="https://zomato.com" target="_blank">FoodMate</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav ml-auto h6">
-                <li class="nav-item mx-3"><a class="nav-link" href="./index.html">Home</a></li>
-                <li class="nav-item mx-3"><a class="nav-link" href="#">About Us</a></li>
-                <li class="nav-item mx-3"><a class="nav-link" href="#">Contact Us</a></li>
-                <li class="nav-item mx-3"><a class="nav-link" href="./cart.html">
-                        <i class="bi bi-cart4"></i>
-                        <span class="badge badge-success badge-count">0</span>
-                    </a></li>
-            </ul>
+
+    <body>
+        <section id="preloader">
+            <div class="loader">
+                <object data="./img/loader.svg"></object>
+            </div>
+        </section>
+
+        <header class="cartNavbar">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="https://zomato.com">
+                    <img src="./img/logo.png" />
+                    <span>FoodMate</span>
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navbar"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cart-link go-back" href="#">
+                                <i class="bi bi-reply-all-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div style="margin: 200px">
+            <h1 id="item-selected"></h1>
+            <ol id="item-list" class="container"></ol>
         </div>
-    </nav>
-    
-    <h1 id="item-selected"></h1>
-    <ol id="item-list" class="container"></ol>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/cartscript.js"></script>
-</body>
+    </body>
 </html>
