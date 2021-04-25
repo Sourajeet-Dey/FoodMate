@@ -1,0 +1,191 @@
+/* Main Font in (style.css) */
+
+/* All Custom Fonts in (style.css) */
+/* Add / Change if required! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* About Section Styles Start */
+
+section.about {
+    position: relative;
+}
+
+section.about div.about-container {
+    position: relative;
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/* About Text Div */
+
+section.about div.about-container .about_text {
+    position: relative;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.about div.about-container .about_text h3 {
+    position: relative;
+    margin: 30px auto 10px;
+    font-size: 4.5rem;
+    font-weight: 600;
+    font-family: "Rancho", sans-serif;
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+section.about div.about-container .about_text h3:after {
+    content: "";
+    width: 70%;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -100%);
+    border-radius: 100%;
+    background: var(--lightcyan);
+    z-index: -1;
+}
+
+section.about div.about-container .about_text img {
+    margin: 10px auto 20px;
+    width: 64px;
+    height: 64px;
+}
+
+section.about div.about-container .about_text p {
+    margin: 20px auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    color: var(--darkgrey);
+    text-align: justify;
+    text-align-last: center;
+}
+
+section.about div.about-container .about_text .author {
+    margin: 30px auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.about div.about-container .about_text .author img {
+    margin: auto 10px;
+    width: 80px;
+    height: 80px;
+}
+
+section.about div.about-container .about_text .author span h6 {
+    margin: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: var(--lightblack);
+    text-align: center;
+}
+
+section.about div.about-container .about_text .author span p {
+    margin: 5px 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightgrey);
+    text-align: center;
+}
+
+/* About Image Div */
+
+section.about div.about-container .about_img {
+    position: relative;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.about div.about-container .about_img img {
+    width: 100%;
+}
+
+/* About Responsive Media */
+
+@media (max-width: 992px) {
+    section.about div.about-container .about_text,
+    section.about div.about-container .about_img {
+        padding: 10px 30px;
+    }
+
+    section.about div.about-container .about_text h3 {
+        font-size: 3.8rem;
+    }
+
+    section.about div.about-container .about_text h3:after {
+        width: 60%;
+        height: 5px;
+    }
+
+    section.about div.about-container .about_text p {
+        margin: 10px auto;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section.about div.about-container .about_img img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 442px) {
+    section.about div.about-container .about_text,
+    section.about div.about-container .about_img {
+        padding: 10px 20px;
+    }
+
+    section.about div.about-container .about_text h3 {
+        margin: 20px auto 10px;
+        font-size: 3rem;
+    }
+
+    section.about div.about-container .about_text h3:after {
+        height: 4px;
+    }
+
+    section.about div.about-container .about_text img {
+        width: 56px;
+        height: 56px;
+    }
+
+    section.about div.about-container .about_text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 332px) {
+    section.about div.about-container .about_text .author img {
+        margin: auto 5px;
+        width: 72px;
+        height: 72px;
+    }
+
+    section.about div.about-container .about_text .author span h6 {
+        margin: 5px;
+        font-size: 1rem;
+    }
+
+    section.about div.about-container .about_text .author span p {
+        margin: 5px;
+        font-size: 0.8rem;
+    }
+}

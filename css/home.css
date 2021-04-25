@@ -10,7 +10,7 @@
 
 section.home {
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     background: url(../img/bannerbg.png) no-repeat center / cover;
 }
 
