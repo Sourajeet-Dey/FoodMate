@@ -34,3 +34,12 @@ $(".cart-link").mouseleave(function () {
 $(".go-back").click(function () {
     window.history.back();
 });
+
+// Scroll To Top
+$(window).scroll(function () {
+    $(".ScrolltoTop").toggleClass("show", window.scrollY > 500);
+});
+
+$(".ScrolltoTop").click(function () {
+    $(window).scrollTop(0);
+});

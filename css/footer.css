@@ -1,0 +1,144 @@
+/* Main Font in (style.css) */
+
+/* All Custom Fonts in (style.css) */
+/* Add / Change if required! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Footer Section Styles Start */
+
+section.footer {
+    position: relative;
+}
+
+footer.footer-container {
+    margin: 200px auto 0;
+    padding: 100px 0 0;
+    max-width: 100%;
+    text-align: center;
+    background: url(../img/footerbg.png);
+}
+
+/* Footer Bg Dot Pattern */
+
+.pattern-dots {
+    padding: 100px 0 70px;
+    color: var(--lightgrey);
+    background-image: radial-gradient(currentColor 2px, transparent 2px);
+    background-size: calc(10 * 5px) calc(10 * 5px);
+}
+
+/* Footer Text Div */
+
+footer.footer-container img {
+    margin: 10px auto;
+    width: 70px;
+    height: 100%;
+}
+
+footer.footer-container p {
+    margin: 15px auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightblack);
+    text-align: center;
+}
+
+footer.footer-container p span {
+    margin: auto 4px;
+    font-size: 1.7rem;
+    color: var(--lightyellow);
+    -webkit-text-stroke: 1px var(--darkblack);
+}
+
+footer.footer-container p i {
+    margin: auto 4px;
+    font-size: 1.3rem;
+    color: var(--lightyellow);
+    -webkit-text-stroke: 2px var(--darkblack);
+}
+
+/* Footer Responsive Media */
+
+@media (max-width: 768px) {
+    footer.footer-container {
+        margin: 100px auto 0;
+        padding: 80px 10px 0;
+    }
+    .pattern-dots {
+        padding: 80px 0 70px;
+    }
+
+    footer.footer-container img {
+        width: 60px;
+    }
+    footer.footer-container p {
+        font-size: 1.3rem;
+    }
+    footer.footer-container p span {
+        font-size: 1.5rem;
+    }
+    footer.footer-container p i {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 424px) {
+    footer.footer-container img {
+        margin: 5px auto;
+    }
+    footer.footer-container p {
+        margin: 10px auto;
+        font-size: 1.2rem;
+    }
+    footer.footer-container p span {
+        font-size: 1.4rem;
+    }
+    footer.footer-container p i {
+        font-size: 1rem;
+    }
+}
+
+/* Footer Scroll Top Styles */
+
+div.ScrolltoTop {
+    padding: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/scrollbg.png) no-repeat center / contain;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s ease;
+    transform: scale(0) rotate(0deg);
+}
+
+div.ScrolltoTop.show {
+    transform: scale(1) rotate(360deg);
+}
+
+div.ScrolltoTop:hover {
+    transform: scale(1.1);
+}
+
+div.ScrolltoTop span.upArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    color: var(--darkwhite);
+}
+
+@media (max-width: 424px) {
+    div.ScrolltoTop {
+        width: 50px;
+        height: 50px;
+    }
+    div.ScrolltoTop span.upArrow {
+        font-size: 20px;
+    }
+}
