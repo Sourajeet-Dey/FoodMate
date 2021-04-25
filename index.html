@@ -1,128 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>FoodMate</title>
+        <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodMate</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css" />
-</head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        />
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="https://zomato.com" target="_blank">FoodMate</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav ml-auto h6">
-                <li class="nav-item mx-3"><a class="nav-link" href="./index.html">Home</a></li>
-                <li class="nav-item mx-3"><a class="nav-link" href="#">About Us</a></li>
-                <li class="nav-item mx-3"><a class="nav-link" href="#">Contact Us</a></li>
-                <li class="nav-item mx-3"><a class="nav-link" href="./cart.html">
-                        <i class="bi bi-cart4"></i>
-                        <span class="badge badge-success badge-count">0</span>
-                    </a></li>
-            </ul>
-        </div>
-    </nav>
+        <link rel="stylesheet" href="./css/home.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/loader.css" />
+        <link rel="stylesheet" href="./css/style.css" />
 
+        <script
+            defer
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        ></script>
+        <script defer src="./js/cartAdd.js"></script>
+        <script defer src="./js/index.js"></script>
+    </head>
 
-    <section id="home">
-        <div class="container container-home">
-            <div class="row">
-                <div class="text-container col-md-6">
-                    <h2>FoodMate</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a class="btn btn-light">Order Now</a>
+    <body>
+        <section id="preloader">
+            <div class="loader">
+                <object data="./img/loader.svg"></object>
+            </div>
+        </section>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="https://zomato.com">
+                    <img src="./img/logo.png" />
+                    <span>FoodMate</span>
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navbar"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Foodies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link cart-link" href="./cart.html">
+                                <img src="./img/cart_dark.png" />
+                                <span class="badge-count">NA</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="img-container col-md-6">
-                    <img src="./img/chef.png" class="img-fluid">
+            </nav>
+        </header>
+
+        <section id="home" class="home">
+            <div class="container home-container">
+                <div class="home_text">
+                    <span>Hasty and tasty!</span>
+                    <h2>Food Mate</h2>
+                    <p>
+                        Satisfy your snack attack. <br />
+                        & <br />
+                        Eat. Drink. Love. <br />
+                    </p>
+                    <button class="btn btn-order">Order Now</button>
+                </div>
+                <div class="home_img">
+                    <img src="./img/foodmate.png" class="img-fluid" />
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id=foods>
-        <div class="container container-food">
-            <h1>Our Foods</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            <div class="row">
-
-                <div class="card col-md-3 m-3">
-                    <img src="./img/eggroll.JPG" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Egg Roll</h5>
-                        <p class="card-text">Rs 30</p>
-                        <button class="btn btn-primary add-cart" onclick="add_item('Egg Roll');disable()">Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card col-md-3 m-3">
-                    <img src="./img/eggchowmin.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Egg Chowmin</h5>
-                        <p class="card-text">Rs 60</p>
-                        <button class="btn btn-primary add-cart" onclick="add_item('Egg Chowmin')">Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card col-md-3 m-3">
-                    <img src="./img/chillichicken.jfif" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Chilli Chicken</h5>
-                        <p class="card-text">Rs 140</p>
-                        <button class="btn btn-primary add-cart" onclick="add_item('Chilli Chicken')">Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card col-md-3 m-3">
-                    <img src="./img/chickenmanchurian.JPG" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Chicken Manchurian</h5>
-                        <p class="card-text">Rs 150</p>
-                        <button class="btn btn-primary add-cart" onclick="add_item('Chicken Manchurian')">Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card col-md-3 m-3">
-                    <img src="./img/naan.jfif" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Naan</h5>
-                        <p class="card-text">Rs 30</p>
-                        <button class="btn btn-primary add-cart" onclick="add_item('Naan')">Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card col-md-3 m-3">
-                    <img src="./img/chickenmomo.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Chicken Momo</h5>
-                        <p class="card-text">Rs 100</p>
-                        <button class="btn btn-primary add-cart" onclick="add_item('Chicken Momo')">Add to Cart</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
-</body>
-
+        </section>
+    </body>
 </html>
