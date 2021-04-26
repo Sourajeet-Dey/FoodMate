@@ -43,3 +43,8 @@ $(window).scroll(function () {
 $(".ScrolltoTop").click(function () {
     $(window).scrollTop(0);
 });
+
+// Add to Cart Button (Food Cart)
+// $(".food-cart").click(function () {
+//     $(".food-cart").toggleClass("addCart");
+// });
