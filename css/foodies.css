@@ -162,11 +162,18 @@ section.foodies div.foodies-container .food-desc .food-cart {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section.foodies div.foodies-container .food-desc .food-cart.addCart {
+    background: var(--lightred);
+    box-shadow: 0 2px 6px var(--lightred);
 }
 
 section.foodies div.foodies-container .food-desc .food-cart img {
     width: 28px;
     height: 28px;
+    user-select: none;
 }
 
 section.foodies div.foodies-container .food-desc .food-cart img:nth-child(1) {
@@ -184,12 +191,31 @@ section.foodies div.foodies-container .food-desc .food-cart img:nth-child(2) {
 	transition: all 0.4s ease;
 }
 
-section.foodies div.foodies-container .food-desc .food-cart.addCart img:nth-child(1) {
+section.foodies div.foodies-container .food-desc #dish_1.food-cart.addCart img:nth-child(1),
+section.foodies div.foodies-container .food-desc #dish_2.food-cart.addCart img:nth-child(1),
+section.foodies div.foodies-container .food-desc #dish_3.food-cart.addCart img:nth-child(1),
+section.foodies div.foodies-container .food-desc #dish_4.food-cart.addCart img:nth-child(1),
+section.foodies div.foodies-container .food-desc #dish_5.food-cart.addCart img:nth-child(1),
+section.foodies div.foodies-container .food-desc #dish_6.food-cart.addCart img:nth-child(1),
+section.foodies div.foodies-container .food-desc #dish_7.food-cart.addCart img:nth-child(1),
+section.foodies div.foodies-container .food-desc #dish_8.food-cart.addCart img:nth-child(1),
+section.foodies div.foodies-container .food-desc #dish_9.food-cart.addCart img:nth-child(1),
+section.foodies div.foodies-container .food-desc #dish_10.food-cart.addCart img:nth-child(1) {
     opacity: 0;
 	visibility: hidden;
     transform: scale(0);
 }
-section.foodies div.foodies-container .food-desc .food-cart.addCart img:nth-child(2) {
+
+section.foodies div.foodies-container .food-desc #dish_1.food-cart.addCart img:nth-child(2),
+section.foodies div.foodies-container .food-desc #dish_2.food-cart.addCart img:nth-child(2),
+section.foodies div.foodies-container .food-desc #dish_3.food-cart.addCart img:nth-child(2),
+section.foodies div.foodies-container .food-desc #dish_4.food-cart.addCart img:nth-child(2),
+section.foodies div.foodies-container .food-desc #dish_5.food-cart.addCart img:nth-child(2),
+section.foodies div.foodies-container .food-desc #dish_6.food-cart.addCart img:nth-child(2),
+section.foodies div.foodies-container .food-desc #dish_7.food-cart.addCart img:nth-child(2),
+section.foodies div.foodies-container .food-desc #dish_8.food-cart.addCart img:nth-child(2),
+section.foodies div.foodies-container .food-desc #dish_9.food-cart.addCart img:nth-child(2),
+section.foodies div.foodies-container .food-desc #dish_10.food-cart.addCart img:nth-child(2) {
     opacity: 1;
 	visibility: visible;
     transform: translate(-50%,-50%) scale(1);
