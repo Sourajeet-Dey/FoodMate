@@ -21,6 +21,16 @@ $(window).scroll(function () {
 
 // ****************************************************************************
 
+// Dark Mode Toggle
+
+$(".theme_mode i").click(function () {
+    $("html").toggleClass("dark");
+    $("body").toggleClass("dark");
+    $(".theme_mode i").toggleClass("dark");
+});
+
+// ****************************************************************************
+
 // Navbar Toggle
 
 $(".navbar-toggler").click(function () {

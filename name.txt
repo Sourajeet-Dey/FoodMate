@@ -1,2 +1,3 @@
-My name is Arpan.
-My first pull request.
+1. My name is Arpan Acharya.
+2. My name is Sourajeet Dey.
+3. My name is Niladri Mondal.
