@@ -1,390 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>FoodMate</title>
-        <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
 
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <title>FoodMate</title>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/loader.css" />
-        <link rel="stylesheet" href="./css/header.css" />
-        <link rel="stylesheet" href="./css/home.css" />
-        <link rel="stylesheet" href="./css/about.css" />
-        <link rel="stylesheet" href="./css/foodies.css" />
-        <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
-        <script
-            defer
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-        ></script>
-        <script
-            defer
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        ></script>
-        <script defer src="./js/cartAdd.js"></script>
-        <script defer src="./js/index.js"></script>
-    </head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/loader.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/foodies.css" />
+    <link rel="stylesheet" href="./css/teams.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
-    <body>
-        <section id="preloader">
-            <div class="loader">
-                <object data="./img/loader.svg"></object>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./js/cartAdd.js"></script>
+    <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <section id="preloader">
+        <div class="loader">
+            <object data="./img/loader.svg"></object>
+        </div>
+    </section>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="https://sourajeet-dey.github.io/FoodMate/">
+                <img src="./img/logo.png" />
+                <span>FoodMate</span>
+            </a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Foodies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link cart-link" href="./cart.html">
+                            <img src="./img/cart_dark.png" />
+                            <span class="badge-count">NA</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a
-                    class="navbar-brand"
-                    href="https://sourajeet-dey.github.io/FoodMate/"
-                >
-                    <img src="./img/logo.png" />
-                    <span>FoodMate</span>
-                </a>
-
-                <button
-                    class="navbar-toggler"
-                    data-toggle="collapse"
-                    data-target="#navbar"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Foodies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link cart-link" href="./cart.html">
-                                <img src="./img/cart_dark.png" />
-                                <span class="badge-count">NA</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <section id="home" class="home">
-            <div class="container home-container">
-                <div class="home_text">
-                    <span>Hasty and tasty!</span>
-                    <h2>Food Mate</h2>
-                    <p>
-                        Satisfy your snack attack. <br />
-                        & <br />
-                        Eat. Drink. Love. <br />
-                    </p>
-                    <button class="btn btn-order">Order Now</button>
-                </div>
-                <div class="home_img">
-                    <img src="./img/foodmate.png" class="img-fluid" />
-                </div>
+            <div class="theme_mode">
+                <i class="bi bi-moon-stars-fill darker"></i>
+                <i class="bi bi-sun-fill lighter"></i>
             </div>
-        </section>
+        </nav>
+    </header>
+    <!-- Header End -->
 
-        <section id="about" class="about">
-            <div class="container about-container">
-                <div class="row">
-                    <div class="about_text col-md-8">
-                        <h3>About Us</h3>
-                        <img src="./img/serve.png" />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Asperiores accusantium nemo obcaecati sapiente
-                            est! Repellat asperiores aliquam, quam doloremque
-                            obcaecati facere provident voluptates dolorum autem
-                            voluptas voluptate explicabo totam rem.
-                        </p>
-                        <div class="author">
-                            <img src="./img/chef_icon.png" />
-                            <span>
-                                <h6>Sourajeet Dey</h6>
-                                <p>Head of FoodMate</p>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="about_img col-md-4">
-                        <img src="./img/chef.png" class="img-fluid" />
-                    </div>
-                </div>
+    <!-- Home Banner Start -->
+    <section id="home" class="home">
+        <div class="container home-container">
+            <div class="home_text">
+                <span>Hasty and tasty!</span>
+                <h2>Food Mate</h2>
+                <p>
+                    Satisfy your snack attack. <br />
+                    & <br />
+                    Eat. Drink. Love. <br />
+                </p>
+                <button class="btn btn-order">Order Now</button>
             </div>
-        </section>
+            <div class="home_img">
+                <img src="./img/foodmate.png" class="img-fluid" />
+            </div>
+        </div>
+    </section>
+    <!-- Home Banner End -->
 
-        <section id="foodies" class="foodies">
-            <div class="foodies-container">
-                <h2 class="foodies-head">
-                    <span>Foodies</span>
+    <!-- About Start -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="row">
+                <div class="about_text col-md-8">
+                    <h3>About Us</h3>
                     <img src="./img/serve.png" />
-                </h2>
-
-                <div class="foodies-cards row">
-                    <!-- Food Item 1 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="food-card">
-                            <div class="food-img">
-                                <img
-                                    src="./img/dishes/dish_1.jpg"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="food-desc">
-                                <div class="food-details">
-                                    <h4>Egg Roll</h4>
-                                    <span>Rs. 30.00</span>
-                                </div>
-                                <div class="food-cart" id="dish_1">
-                                    <img src="./img/cart_add.svg" />
-                                    <img src="./img/cart_remove.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Food Item 2 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="food-card">
-                            <div class="food-img">
-                                <img
-                                    src="./img/dishes/dish_2.JPG"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="food-desc">
-                                <div class="food-details">
-                                    <h4>Egg Chowmin</h4>
-                                    <span>Rs. 60.00</span>
-                                </div>
-                                <div class="food-cart" id="dish_2">
-                                    <img src="./img/cart_add.svg" />
-                                    <img src="./img/cart_remove.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Food Item 3 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="food-card">
-                            <div class="food-img">
-                                <img
-                                    src="./img/dishes/dish_3.jpg"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="food-desc">
-                                <div class="food-details">
-                                    <h4>Chilli Chicken</h4>
-                                    <span>Rs. 140.00</span>
-                                </div>
-                                <div class="food-cart" id="dish_3">
-                                    <img src="./img/cart_add.svg" />
-                                    <img src="./img/cart_remove.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Food Item 4 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="food-card">
-                            <div class="food-img">
-                                <img
-                                    src="./img/dishes/dish_4.JPG"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="food-desc">
-                                <div class="food-details">
-                                    <h4>Chicken Manchurian</h4>
-                                    <span>Rs. 150.00</span>
-                                </div>
-                                <div class="food-cart" id="dish_4">
-                                    <img src="./img/cart_add.svg" />
-                                    <img src="./img/cart_remove.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Food Item 5 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="food-card">
-                            <div class="food-img">
-                                <img
-                                    src="./img/dishes/dish_5.jpg"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="food-desc">
-                                <div class="food-details">
-                                    <h4>Butter Naan</h4>
-                                    <span>Rs. 30.00</span>
-                                </div>
-                                <div class="food-cart" id="dish_5">
-                                    <img src="./img/cart_add.svg" />
-                                    <img src="./img/cart_remove.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Food Item 6 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="food-card">
-                            <div class="food-img">
-                                <img
-                                    src="./img/dishes/dish_6.jpg"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="food-desc">
-                                <div class="food-details">
-                                    <h4>Chicken Momo</h4>
-                                    <span>Rs. 100.00</span>
-                                </div>
-                                <div class="food-cart" id="dish_6">
-                                    <img src="./img/cart_add.svg" />
-                                    <img src="./img/cart_remove.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Food Item 7 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="food-card">
-                            <div class="food-img">
-                                <img
-                                    src="./img/dishes/dish_7.jpg"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="food-desc">
-                                <div class="food-details">
-                                    <h4>Cheese Burger</h4>
-                                    <span>Rs. 80.00</span>
-                                </div>
-                                <div class="food-cart" id="dish_7">
-                                    <img src="./img/cart_add.svg" />
-                                    <img src="./img/cart_remove.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Food Item 8 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="food-card">
-                            <div class="food-img">
-                                <img
-                                    src="./img/dishes/dish_8.jpg"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="food-desc">
-                                <div class="food-details">
-                                    <h4>Veg Fingers</h4>
-                                    <span>Rs. 40.00</span>
-                                </div>
-                                <div class="food-cart" id="dish_8">
-                                    <img src="./img/cart_add.svg" />
-                                    <img src="./img/cart_remove.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Food Item 9 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="food-card">
-                            <div class="food-img">
-                                <img
-                                    src="./img/dishes/dish_9.jpg"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="food-desc">
-                                <div class="food-details">
-                                    <h4>Spring Rolls</h4>
-                                    <span>Rs. 20.00</span>
-                                </div>
-                                <div class="food-cart" id="dish_9">
-                                    <img src="./img/cart_add.svg" />
-                                    <img src="./img/cart_remove.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Food Item 10 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="food-card">
-                            <div class="food-img">
-                                <img
-                                    src="./img/dishes/dish_10.jpg"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="food-desc">
-                                <div class="food-details">
-                                    <h4>Veg Pizza</h4>
-                                    <span>Rs. 100.00</span>
-                                </div>
-                                <div class="food-cart" id="dish_10">
-                                    <img src="./img/cart_add.svg" />
-                                    <img src="./img/cart_remove.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="footer">
-            <footer class="container footer-container">
-                <div class="pattern-dots">
-                    <img src="./img/dish.png" />
                     <p>
-                        "Our Foody FoodMate" @ 2021
-                        <span>||</span>
-                        Made with <i class="bi bi-heart-fill"></i> by FoodMate.
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Asperiores accusantium nemo obcaecati sapiente
+                        est! Repellat asperiores aliquam, quam doloremque
+                        obcaecati facere provident voluptates dolorum autem
+                        voluptas voluptate explicabo totam rem.
                     </p>
-                    <p>Thanks for Visiting! :)</p>
+                    <div class="author">
+                        <img src="./img/chef_icon.png" />
+                        <span>
+                            <h6>Sourajeet Dey</h6>
+                            <p>Head of FoodMate</p>
+                        </span>
+                    </div>
                 </div>
-            </footer>
-
-            <div class="ScrolltoTop">
-                <span class="upArrow"><i class="fa fa-arrow-up"></i></span>
+                <div class="about_img col-md-4">
+                    <img src="./img/chef.png" class="img-fluid" />
+                </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Foodies Start -->
+    <section id="foodies" class="foodies">
+        <div class="foodies-container">
+            <h2 class="foodies-head">
+                <span>Foodies</span>
+                <img src="./img/serve.png" />
+            </h2>
+
+            <div class="foodies-cards row">
+                <!-- Food Item 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="./img/dishes/dish_1.jpg" class="img-fluid" />
+                        </div>
+                        <div class="food-desc">
+                            <div class="food-details">
+                                <h4>Egg Roll</h4>
+                                <span>Rs. 30.00</span>
+                            </div>
+                            <div class="food-cart" id="dish_1">
+                                <img src="./img/cart_add.svg" />
+                                <img src="./img/cart_remove.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="./img/dishes/dish_2.JPG" class="img-fluid" />
+                        </div>
+                        <div class="food-desc">
+                            <div class="food-details">
+                                <h4>Egg Chowmin</h4>
+                                <span>Rs. 60.00</span>
+                            </div>
+                            <div class="food-cart" id="dish_2">
+                                <img src="./img/cart_add.svg" />
+                                <img src="./img/cart_remove.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="./img/dishes/dish_3.jpg" class="img-fluid" />
+                        </div>
+                        <div class="food-desc">
+                            <div class="food-details">
+                                <h4>Chilli Chicken</h4>
+                                <span>Rs. 140.00</span>
+                            </div>
+                            <div class="food-cart" id="dish_3">
+                                <img src="./img/cart_add.svg" />
+                                <img src="./img/cart_remove.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="./img/dishes/dish_4.JPG" class="img-fluid" />
+                        </div>
+                        <div class="food-desc">
+                            <div class="food-details">
+                                <h4>Chicken Manchurian</h4>
+                                <span>Rs. 150.00</span>
+                            </div>
+                            <div class="food-cart" id="dish_4">
+                                <img src="./img/cart_add.svg" />
+                                <img src="./img/cart_remove.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 5 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="./img/dishes/dish_5.jpg" class="img-fluid" />
+                        </div>
+                        <div class="food-desc">
+                            <div class="food-details">
+                                <h4>Butter Naan</h4>
+                                <span>Rs. 30.00</span>
+                            </div>
+                            <div class="food-cart" id="dish_5">
+                                <img src="./img/cart_add.svg" />
+                                <img src="./img/cart_remove.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 6 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="./img/dishes/dish_6.jpg" class="img-fluid" />
+                        </div>
+                        <div class="food-desc">
+                            <div class="food-details">
+                                <h4>Chicken Momo</h4>
+                                <span>Rs. 100.00</span>
+                            </div>
+                            <div class="food-cart" id="dish_6">
+                                <img src="./img/cart_add.svg" />
+                                <img src="./img/cart_remove.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 7 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="./img/dishes/dish_7.jpg" class="img-fluid" />
+                        </div>
+                        <div class="food-desc">
+                            <div class="food-details">
+                                <h4>Cheese Burger</h4>
+                                <span>Rs. 80.00</span>
+                            </div>
+                            <div class="food-cart" id="dish_7">
+                                <img src="./img/cart_add.svg" />
+                                <img src="./img/cart_remove.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 8 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="./img/dishes/dish_8.jpg" class="img-fluid" />
+                        </div>
+                        <div class="food-desc">
+                            <div class="food-details">
+                                <h4>Veg Fingers</h4>
+                                <span>Rs. 40.00</span>
+                            </div>
+                            <div class="food-cart" id="dish_8">
+                                <img src="./img/cart_add.svg" />
+                                <img src="./img/cart_remove.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 9 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="./img/dishes/dish_9.jpg" class="img-fluid" />
+                        </div>
+                        <div class="food-desc">
+                            <div class="food-details">
+                                <h4>Spring Rolls</h4>
+                                <span>Rs. 20.00</span>
+                            </div>
+                            <div class="food-cart" id="dish_9">
+                                <img src="./img/cart_add.svg" />
+                                <img src="./img/cart_remove.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Item 10 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="./img/dishes/dish_10.jpg" class="img-fluid" />
+                        </div>
+                        <div class="food-desc">
+                            <div class="food-details">
+                                <h4>Veg Pizza</h4>
+                                <span>Rs. 100.00</span>
+                            </div>
+                            <div class="food-cart" id="dish_10">
+                                <img src="./img/cart_add.svg" />
+                                <img src="./img/cart_remove.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Foodies End -->
+
+    <!-- Teams Start -->
+    <section id="team" class="team">
+        <div class="container team-container">
+            <h2 class="team-head">
+                <span>Our Team</span>
+                <img src="./img/serve.png" />
+            </h2>
+
+            <div class="team-members">
+                <!-- Member 1 -->
+                <div class="team-card">
+                    <img src="./img/team/team_1.png" />
+                    <h3>Sourajeet Dey</h3>
+                    <p>Developer</p>
+                    <span>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-chat-square-quote-fill"></i></a>
+                    </span>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-card">
+                    <img src="./img/team/team_2.png" />
+                    <h3>Niladri Mondal</h3>
+                    <p>Designer</p>
+                    <span>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-chat-square-quote-fill"></i></a>
+                    </span>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-card">
+                    <img src="./img/team/team_3.png" />
+                    <h3>Arpan Acharya</h3>
+                    <p>Influencer</p>
+                    <span>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-chat-square-quote-fill"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Teams End -->
+
+    <!-- Footer Start -->
+    <section class="footer">
+        <footer class="container footer-container">
+            <div class="pattern-dots">
+                <img src="./img/dish.png" />
+                <p>
+                    "Our Foody FoodMate" @ 2021
+                    <span>||</span>
+                    Made with <i class="bi bi-heart-fill"></i> by FoodMate.
+                </p>
+                <p>Thanks for Visiting! :)</p>
+            </div>
+        </footer>
+
+        <div class="ScrolltoTop">
+            <span class="upArrow"><i class="fa fa-arrow-up"></i></span>
+        </div>
+    </section>
+    <!-- Footer End -->
+
+</body>
+
 </html>

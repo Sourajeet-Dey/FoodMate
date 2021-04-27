@@ -116,6 +116,37 @@ button.navbar-toggler.showNavbar span.navbar-toggler-icon:after {
     transition: top 0.2s, transform 0.2s 0.2s;
 }
 
+/* Navbar Theme Mode */
+
+header nav div.theme_mode {
+    margin: auto 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav div.theme_mode i {
+    padding: 8px 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: var(--lightblack);
+    background: var(--lightwhite);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {header nav div.theme_mode {display: none}}
+header nav div.theme_mode i.dark {color: var(--darkwhite); background: var(--darkmodebg);}
+header nav div.theme_mode i:nth-child(1) {opacity: 1; transform: translate(-50%, -50%) rotate(0deg);}
+header nav div.theme_mode i:nth-child(2) {opacity: 0; transform: translate(-50%, -50%) rotate(0deg);}
+header nav div.theme_mode i:nth-child(1).dark {opacity: 0; transform: translate(-50%, -50%) rotate(360deg);}
+header nav div.theme_mode i:nth-child(2).dark {opacity: 1; transform: translate(-50%, -50%) rotate(360deg);}
+
 /* Navbar Nav Links */
 
 header nav ul.navbar-nav {
