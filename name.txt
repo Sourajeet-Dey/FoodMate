@@ -1,3 +1,9 @@
-1. My name is Arpan Acharya.
-2. My name is Sourajeet Dey.
-3. My name is Niladri Mondal.
+1. Hello! I am Arpan Acharya. I am new in development works. I like web development.
+
+
+
+2. My name is Sourajeet Dey. I have some knowledge in programming and development. I love Backend works.
+
+
+
+3. My name is Niladri Mondal. I have moderate knowledge in web development. I love Frontend works and designing.
