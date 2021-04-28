@@ -1,0 +1,122 @@
+/* All Custom Colors in (style.css) || [:root] || */
+/* All Dark Mode Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Dark Mode Theme Styles Start */
+
+/* ============================================================================== */
+/* Header Section Dark Theme */
+
+body.dark header,
+body.dark header.cartNavbar,
+body.dark header.showHeader {
+    background: var(--darkmode);
+    box-shadow: 0 0 20px 10px rgb(0 0 0 / 20%);
+}
+
+/* Navbar Nav Links */
+
+body.dark header nav ul.navbar-nav li.nav-item a.nav-link:hover,
+body.dark header.cartNavbar nav ul.navbar-nav li.nav-item a.nav-link:hover,
+body.dark header.showHeader nav ul.navbar-nav li.nav-item a.nav-link:hover {
+    color: var(--lightwhite);
+    background: rgba(20, 20, 50, 1);
+}
+
+/* Cart */
+body.dark header nav ul.navbar-nav li.nav-item a.cart-link:hover,
+body.dark header.cartNavbar nav ul.navbar-nav li.nav-item a.cart-link:hover,
+body.dark header.showHeader nav ul.navbar-nav li.nav-item a.cart-link:hover {
+    background: var(--darkmodebg);
+}
+
+body.dark header nav ul.navbar-nav li.nav-item a.cart-link span,
+body.dark header nav ul.navbar-nav li.nav-item a.cart-link:hover span {
+    background: var(--darkblack);
+}
+
+/* ============================================================================== */
+/* Home Section Dark Theme */
+
+body.dark section.home {
+    background: url(../img/bannerbg_dark.png) no-repeat center / cover;
+}
+
+body.dark section.home div.home-container .home_text h2 {
+    color: var(--lightwhite);
+    text-shadow: 1px 1px 1px var(--lightred), 2px 2px 1px var(--lightred),
+        3px 3px 1px var(--lightred), 4px 4px 1px var(--lightred),
+        5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================================================== */
+/* About Section Dark Theme */
+
+body.dark section.about div.about-container .about_text h3 {
+    color: var(--lightwhite);
+}
+
+body.dark section.about div.about-container .about_text p {
+    color: var(--mediumgrey);
+}
+
+body.dark section.about div.about-container .about_text .author span h6 {
+    color: var(--lightwhite);
+}
+
+body.dark section.about div.about-container .about_text .author span p {
+    color: var(--lightgrey);
+}
+
+/* ============================================================================== */
+/* Foodies Section Dark Theme */
+
+body.dark section.foodies div.foodies-container h2.foodies-head span {
+    color: var(--lightwhite);
+}
+
+body.dark section.foodies div.foodies-container .foodies-cards .food-card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+body.dark section.foodies div.foodies-container .foodies-cards .food-card:before {
+    background: linear-gradient(180deg, transparent, var(--lightblack));
+}
+
+/* ============================================================================== */
+/* Team Section Dark Theme */
+
+body.dark section.team div.team-container h2.team-head span {
+    color: var(--lightwhite);
+}
+
+body.dark section.team div.team-container .team-members .team-card img {
+    background: var(--darkmode);
+    box-shadow: 0 2px 3px var(--lightwhite);
+}
+
+body.dark section.team div.team-container .team-members .team-card h3 {
+    color: var(--mediumgrey);
+}
+
+body.dark section.team div.team-container .team-members .team-card p {
+    color: var(--lightgrey);
+}
+
+/* ============================================================================== */
+/* Footer Section Dark Theme */
+
+body.dark footer.footer-container {
+    background: transparent;
+}
+
+/* Footer Bg Dot Pattern */
+body.dark .pattern-dots {
+    color: var(--lightblack);
+}
+
+body.dark footer.footer-container p {
+    color: var(--lightgrey);
+}
+
+/* ============================================================================== */

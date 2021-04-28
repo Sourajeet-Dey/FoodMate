@@ -11,7 +11,9 @@
 section.home {
     position: relative;
     /* height: 100vh; */
-    background: url(../img/bannerbg.png) no-repeat center / cover;
+    background: url(../img/bannerbg_light.png) no-repeat center / cover;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
 }
 
 section.home div.home-container {
@@ -54,6 +56,7 @@ section.home div.home-container .home_text h2 {
     text-align: center;
     letter-spacing: 5px;
     word-spacing: 5px;
+    transition: all 0.3s ease;
     text-shadow: 1px 1px 6px rgba(16, 55, 92, 1),
         2px 2px 6px rgba(16, 55, 92, 1), 3px 3px 6px rgba(16, 55, 92, 1),
         4px 4px 6px rgba(16, 55, 92, 1), 5px 5px 6px rgba(16, 55, 92, 1),
