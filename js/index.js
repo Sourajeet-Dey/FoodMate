@@ -21,12 +21,37 @@ $(window).scroll(function () {
 
 // ****************************************************************************
 
-// Dark Mode Toggle
+// Dark Mode Toggle: Local Storage
+
+// $(".theme_mode i").click(function () {
+//     $("html").toggleClass("dark");
+//     $("body").toggleClass("dark");
+//     $(".theme_mode i").toggleClass("dark");
+// });
+
+var darkmode = localStorage.getItem("darkmode");
+
+if (darkmode === "enabled") {
+    $("html").addClass("dark");
+    $("body").addClass("dark");
+    $(".theme_mode i").addClass("dark");
+    localStorage.setItem("darkmode", "enabled");
+}
 
 $(".theme_mode i").click(function () {
-    $("html").toggleClass("dark");
-    $("body").toggleClass("dark");
-    $(".theme_mode i").toggleClass("dark");
+    var darkmode = localStorage.getItem("darkmode");
+
+    if (darkmode !== "enabled") {
+        $("html").addClass("dark");
+        $("body").addClass("dark");
+        $(".theme_mode i").addClass("dark");
+        localStorage.setItem("darkmode", "enabled");
+    } else {
+        $("html").removeClass("dark");
+        $("body").removeClass("dark");
+        $(".theme_mode i").removeClass("dark");
+        localStorage.setItem("darkmode", null);
+    }
 });
 
 // ****************************************************************************

@@ -27,6 +27,11 @@
 body {
     background: var(--lightwhite);
     font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+body.dark {
+    background: var(--darkmodebg);
 }
 
 /* All Colors Variables (Add / Change Here) */
@@ -55,13 +60,17 @@ body {
 /* Custom Scroll Bar */
 
 ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     background: transparent;
 }
 ::-webkit-scrollbar-thumb {
     background: var(--lightblue);
     border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+    background: var(--lightwhite);
 }
 
 /* Selection */
