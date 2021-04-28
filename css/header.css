@@ -20,14 +20,14 @@ header {
 
     transform: translateY(0);
     background: transparent;
-    box-shadow: 0 0 30px -10px rgb(0 0 0 / 80%);
+    box-shadow: 0 0 30px 10px rgb(0 0 0 / 20%);
 }
 
 header.cartNavbar,
 header.showHeader {
     transform: translateY(0);
     background: var(--darkblack);
-    box-shadow: 0 0 20px -10px rgb(0 0 0 / 80%);
+    box-shadow: 0 0 20px 10px rgb(0 0 0 / 20%);
 }
 
 /* Navbar Logo / Brand */
