@@ -1,9 +1,29 @@
-1. Hello! I am Arpan Acharya. I am new in development works. I like web development.
+Hello, FoodMate!
+Contributors Introduction:
 
+1.
+    Hello!
+    I am Arpan Acharya.
+    Introduction:
+    {
+        I am new in Development Works.
+        I like Web Development.
+    }
 
+2.
+    Hello!
+    I am Sourajeet Dey.
+    Introduction:
+    {
+        I have some Knowledge in Programming & Development.
+        I love Backend Works.
+    }
 
-2. My name is Sourajeet Dey. I have some knowledge in programming and development. I love Backend works.
-
-
-
-3. My name is Niladri Mondal. I have moderate knowledge in web development. I love Frontend works and designing.
+3.
+    Hello!
+    I am Niladri Mondal.
+    Introduction:
+    {
+        I have moderate Knowledge in Web Development.
+        I love Frontend Works & Designing.
+    }

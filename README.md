@@ -10,9 +10,9 @@
 
 ### Team Members:
 
--   ##### Sourajeet Dey
--   ##### Niladri Mondal
--   ##### Arpan Acharya
+-   **Sourajeet Dey**
+-   **Niladri Mondal**
+-   **Arpan Acharya**
 
 ### Contribution Step Details:
 
