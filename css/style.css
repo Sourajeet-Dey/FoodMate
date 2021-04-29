@@ -40,6 +40,7 @@ body.dark {
     --darkblack: #222831;
     --lightblack: #495464;
 
+    --darkmodelg: #2a284f;
     --darkmode: #1f1f37;
     --darkmodebg: #1b1b2f;
 
@@ -55,13 +56,14 @@ body.dark {
     --lightblue: #0075f6;
     --lightgreen: #00ff7f;
     --lightcyan: #20fdee;
+    --lightviolet: #6961f5;
 }
 
 /* Custom Scroll Bar */
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     background: transparent;
 }
 ::-webkit-scrollbar-thumb {

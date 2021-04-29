@@ -172,8 +172,8 @@ $(".food-cart img:nth-child(2)").click(function () {
     counter--;
     $(".badge-count").text(counter);
     $.toast.fire({
-        icon: "success",
-        title: '<span class="text-success">Item Removed from Cart!</span>',
+        icon: "warning",
+        title: '<span class="text-warning">Item Removed from Cart!</span>',
     });
 });
 
