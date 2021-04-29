@@ -26,16 +26,20 @@
 </head>
 
 <body>
+
+    <!-- Preloader Start -->
     <section id="preloader">
         <div class="loader">
             <img src="./img/loader.gif" class="img-fluid" />
             <!-- <object data="./img/loader.svg"></object> -->
         </div>
     </section>
+    <!-- Preloader End -->
 
+    <!-- Header Start -->
     <header class="cartNavbar">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="https://sourajeet-dey.github.io/FoodMate/cart.html">
+            <a class="navbar-brand" href="https://foodmate.vercel.app/">
                 <img src="./img/logo.png" />
                 <span>FoodMate</span>
             </a>
@@ -47,7 +51,7 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link cart-link go-back" href="#">
@@ -63,12 +67,16 @@
             </div>
         </nav>
     </header>
+    <!-- Header End -->
 
+    <!-- Cart Item Start -->
     <div style="margin: 200px">
         <h1 id="item-selected"></h1>
         <ol id="item-list" class="container"></ol>
     </div>
+    <!-- Cart Item End -->
 
+    <!-- Footer Start -->
     <section class="footer">
         <footer class="container footer-container">
             <div class="pattern-dots">
@@ -82,10 +90,17 @@
             </div>
         </footer>
 
+        <div class="theme_mode">
+            <i class="bi bi-moon-fill darker"></i>
+            <i class="bi bi-sun-fill lighter"></i>
+        </div>
+
         <div class="ScrolltoTop">
             <span class="upArrow"><i class="fa fa-arrow-up"></i></span>
         </div>
     </section>
+    <!-- Footer End -->
+
 </body>
 
 </html>
