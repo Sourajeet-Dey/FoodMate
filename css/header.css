@@ -139,12 +139,14 @@ header nav div.theme_mode i {
     transition: all 0.3s ease;
 }
 
+header.cartNavbar nav div.theme_mode i,
 header.showHeader nav div.theme_mode i {
     color: var(--mediumgrey);
     background: rgba(73, 84, 100, 0.4);
 }
 
 header nav div.theme_mode:hover i {background: rgba(255, 255, 255, 0.4)}
+header.cartNavbar nav div.theme_mode:hover i,
 header.showHeader nav div.theme_mode:hover i {background: rgba(0, 0, 0, 0.2)}
 
 header nav div.theme_mode i.dark {
