@@ -101,6 +101,59 @@ footer.footer-container p i {
     }
 }
 
+/* Footer Theme Mode: Mobile */
+
+section.footer div.theme_mode {
+    margin: 20px;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+section.footer div.theme_mode i {
+    width: 52px;
+    height: 52px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    color: var(--lightwhite);
+    background: var(--lightblue);
+    box-shadow: 0 0 4px var(--lightgrey);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section.footer div.theme_mode i.dark {
+    color: var(--darkwhite);
+    background: var(--lightviolet);
+    box-shadow: 0 0 4px var(--darkgrey);
+}
+
+section.footer div.theme_mode i:nth-child(1) {opacity: 1; transform: translate(-50%, -50%) rotate(0deg);}
+section.footer div.theme_mode i:nth-child(2) {opacity: 0; transform: translate(-50%, -50%) rotate(0deg);}
+section.footer div.theme_mode i:nth-child(1).dark {opacity: 0; transform: translate(-50%, -50%) rotate(360deg);}
+section.footer div.theme_mode i:nth-child(2).dark {opacity: 1; transform: translate(-50%, -50%) rotate(360deg);}
+
+@media (min-width: 992px) {
+    section.footer div.theme_mode {
+        display: none
+    }
+}
+
+@media (max-width: 424px) {
+    section.footer div.theme_mode i {
+        width: 48px;
+        height: 48px;
+        padding: 8px 13px;
+    }
+}
+
 /* Footer Scroll Top Styles */
 
 div.ScrolltoTop {
