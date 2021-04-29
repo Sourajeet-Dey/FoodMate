@@ -17,7 +17,6 @@ header {
     padding: 6px 70px;
     transition: all 0.3s ease;
     transition-delay: 0.1s;
-
     transform: translateY(0);
     background: transparent;
     box-shadow: 0 0 30px 10px rgb(0 0 0 / 20%);
@@ -144,8 +143,6 @@ header.showHeader nav div.theme_mode i {
     color: var(--mediumgrey);
     background: rgba(73, 84, 100, 0.4);
 }
-
-@media (max-width: 992px) {header nav div.theme_mode {display: none}}
 
 header nav div.theme_mode:hover i {background: rgba(255, 255, 255, 0.4)}
 header.showHeader nav div.theme_mode:hover i {background: rgba(0, 0, 0, 0.2)}
@@ -290,6 +287,10 @@ header.showHeader nav ul.navbar-nav li.nav-item a.cart-link:hover span {
         margin: 10px;
         padding: 8px 14px;
         width: 100%;
+    }
+
+    header nav div.theme_mode {
+        display: none
     }
 }
 
