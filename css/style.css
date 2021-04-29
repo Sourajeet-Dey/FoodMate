@@ -88,3 +88,12 @@ html.dark ::-webkit-scrollbar-thumb {
     font-family: "Vegan";
     src: url("../fonts/Vegan.ttf");
 }
+
+/* User Select None */
+
+img, .noselect {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}

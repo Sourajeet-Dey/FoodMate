@@ -149,14 +149,12 @@ header.showHeader nav div.theme_mode:hover i {background: rgba(0, 0, 0, 0.2)}
 
 header nav div.theme_mode i.dark {
     color: var(--darkwhite);
-    background: var(--darkmodelg);
-    box-shadow: 0 0 5px -3px var(--lightviolet);
+    background: var(--lightviolet);
 }
 
 header nav div.theme_mode:hover i.dark {
     color: var(--lightgrey);
-    background: var(--darkmodebg);
-    box-shadow: 0 0 5px var(--darkmodelg);
+    background: var(--darkmodelg);
 }
 
 header nav div.theme_mode i:nth-child(1) {opacity: 1; transform: translate(-50%, -50%) rotate(0deg);}
