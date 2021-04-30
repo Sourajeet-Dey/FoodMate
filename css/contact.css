@@ -1,0 +1,230 @@
+/* Main Font in (style.css) */
+
+/* All Custom Fonts in (style.css) */
+/* Add / Change if required! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Contact Section Styles Start */
+
+section.contact {
+    position: relative;
+}
+
+section.contact div.contact-container {
+    position: relative;
+    margin: 50px auto -50px;
+    padding: 100px 20px 0;
+    width: 100%;
+}
+
+/* Contact Image Div */
+
+section.contact div.contact-container .contact_img {
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.contact div.contact-container .contact_img img {
+    width: 100%;
+}
+
+/* Contact Form Div */
+
+section.contact div.contact-container .contact_form {
+    position: relative;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+section.contact div.contact-container .contact_form h3 {
+    margin: 20px auto 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+section.contact div.contact-container .contact_form h3 span {
+    margin: auto 10px;
+    position: relative;
+    font-size: 3.8rem;
+    font-weight: 600;
+    font-family: "Rancho", sans-serif;
+    color: var(--lightblack);
+    letter-spacing: 1px;
+}
+
+section.contact div.contact-container .contact_form h3 span:after {
+    content: "";
+    width: 70%;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -100%);
+    border-radius: 100%;
+    background: var(--lightcyan);
+    z-index: -1;
+}
+
+section.contact div.contact-container .contact_form h3 img {
+    margin: auto 10px;
+    width: 56px;
+    height: 56px;
+}
+
+/* Forms */
+section.contact div.contact-container .contact_form form {
+    margin: 10px auto;
+    position: relative;
+}
+
+section.contact div.contact-container .contact_form form .form-group {
+    margin: 20px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+section.contact div.contact-container .contact_form form .form-group input,
+section.contact div.contact-container .contact_form form .form-group textarea {
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightblack);
+    background: transparent;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    caret-color: var(--lightblue);
+}
+
+section.contact div.contact-container .contact_form form .form-group input::placeholder,
+section.contact div.contact-container .contact_form form .form-group textarea::placeholder {
+    color: var(--lightgrey);
+}
+
+section.contact div.contact-container .contact_form form .form-group label {
+    margin: auto 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightgrey);
+}
+
+section.contact div.contact-container .contact_form form .form-group .form-check-group {
+    margin: auto 50px;
+    width: 100%;
+}
+
+section.contact div.contact-container .contact_form form .form-group .form-check-group .form-check {
+    margin: auto 20px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.contact div.contact-container .contact_form form .form-group input[type='radio'] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+section.contact div.contact-container .contact_form form button.btn-submit {
+    margin: 5px auto;
+    padding: 3px 0;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: var(--lightwhite);
+    background: var(--lightblue);
+    border: 3px solid var(--lightblue);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+section.contact div.contact-container .contact_form form button.btn-submit:hover {
+    color: var(--darkgrey);
+    background: transparent;
+}
+
+/* Contact Responsive Media */
+
+@media (max-width: 1200px) {
+    section.contact div.contact-container .contact_form form .form-group .form-check-group,
+    section.contact div.contact-container .contact_form form .form-group .form-check-group .form-check {
+        margin: auto 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    section.contact div.contact-container .contact_form h3 span {
+        font-size: 3rem;
+    }
+
+    section.contact div.contact-container .contact_form form .form-group .form-check-group .form-check {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    section.contact div.contact-container {
+        padding: 100px 0 0;
+        max-width: 100%;
+    }
+
+    section.contact div.contact-container .contact_img {
+        display: none;
+    }
+    
+    section.contact div.contact-container .contact_form h3 {
+        justify-content: center;
+    }
+
+    section.contact div.contact-container .contact_form h3 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    section.contact div.contact-container .contact_form form .form-group .form-check-group,
+    section.contact div.contact-container .contact_form form .form-group .form-check-group .form-check {
+        margin: auto 10px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 564px) {
+    section.contact div.contact-container .contact_form form .form-group .form-check-group {
+        margin: auto 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section.contact div.contact-container .contact_form form .form-group .form-check-group .form-check {
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 352px) {
+    section.contact div.contact-container .contact_form h3 span {
+        font-size: 2.5rem;
+    }
+
+    section.contact div.contact-container .contact_form h3 img {
+        width: 42px;
+        height: 42px;
+    }
+}

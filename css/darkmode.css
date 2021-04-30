@@ -104,6 +104,23 @@ body.dark section.team div.team-container .team-members .team-card p {
 }
 
 /* ============================================================================== */
+/* Contact Section Dark Theme */
+
+body.dark section.contact div.contact-container .contact_form h3 span {
+    color: var(--lightwhite);
+}
+
+body.dark section.contact div.contact-container .contact_form form .form-group input,
+body.dark section.contact div.contact-container .contact_form form .form-group textarea {
+    color: var(--lightwhite);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
+}
+
+body.dark section.contact div.contact-container .contact_form form button.btn-submit:hover {
+    color: var(--lightwhite);
+}
+
+/* ============================================================================== */
 /* Footer Section Dark Theme */
 
 body.dark footer.footer-container {

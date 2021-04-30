@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/foodies.css" />
     <link rel="stylesheet" href="./css/teams.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -384,6 +385,62 @@
         </div>
     </section>
     <!-- Teams End -->
+
+    <!-- Contact Start -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <div class="row">
+                <div class="contact_img col-md-4">
+                    <img src="./img/location.svg" class="img-fluid" />
+                </div>
+                <div class="contact_form col-md-8">
+                    <h3>
+                        <span>Contact Us</span>
+                        <img src="./img/location.svg" width="32" />
+                    </h3>
+    
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" name="Name" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address" name="Email" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject Talk" name="Subject" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label>Topics</label>
+                            <div class="row form-check-group">
+                                <div class="form-check col">
+                                    <input class="form-check-input" type="radio" name="Topic" value="Topic1" required>
+                                    <label class="form-check-label">Topic 1</label>
+                                </div>
+                                <div class="form-check col">
+                                    <input class="form-check-input" type="radio" name="Topic" value="Topic2" required>
+                                    <label class="form-check-label">Topic 2</label>
+                                </div>
+                                <div class="form-check col">
+                                    <input class="form-check-input" type="radio" name="Topic" value="Topic3" required>
+                                    <label class="form-check-label">Topic 3</label>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" name="Message" rows="4" required></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
 
     <!-- Footer Start -->
     <section class="footer">
