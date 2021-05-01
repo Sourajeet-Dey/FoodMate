@@ -1,303 +1,298 @@
 /* Main Font in (style.css) */
-
 /* All Custom Fonts in (style.css) */
 /* Add / Change if required! */
-
 /* All Custom Colors in (style.css) || [:root] || */
 /* Add / Change if required! */
-
 /* Foodies Section Styles Start */
-
 section.foodies {
-    position: relative;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section.foodies div.foodies-container {
-    position: relative;
-    margin: 20px auto;
-    padding: 60px 20px;
-    width: 100%;
+div.foodies-container {
+  position: relative;
+  margin: 20px auto;
+  padding: 60px 20px;
+  width: 100%;
 }
 
 /* Foodies Head */
-
-section.foodies div.foodies-container h2.foodies-head {
-    position: relative;
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+h2.foodies-head {
+  position: relative;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-section.foodies div.foodies-container h2.foodies-head span {
-    position: relative;
-    margin: 30px auto 10px;
-    font-size: 4rem;
-    font-weight: 600;
-    font-family: "Rancho", sans-serif;
-    color: var(--lightblack);
-    text-align: center;
-    letter-spacing: 1px;
+h2.foodies-head span {
+  position: relative;
+  margin: 30px auto 10px;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: "Rancho", sans-serif;
+  color: var(--lightblack);
+  text-align: center;
+  letter-spacing: 1px;
 }
 
-section.foodies div.foodies-container h2.foodies-head span:after {
-    content: "";
-    width: 70%;
-    height: 5px;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -100%);
-    border-radius: 100%;
-    background: var(--lightcyan);
-    z-index: -1;
+h2.foodies-head span::after {
+  content: "";
+  width: 70%;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -100%);
+  border-radius: 100%;
+  background: var(--lightcyan);
+  z-index: -1;
 }
 
-section.foodies div.foodies-container h2.foodies-head img {
-    margin: 10px auto 20px;
-    width: 56px;
-    height: 56px;
+h2.foodies-head img {
+  margin: 10px auto 20px;
+  width: 56px;
+  height: 56px;
 }
 
 /* Foodies Cards */
-
-section.foodies div.foodies-container .foodies-cards {
-    position: relative;
-    margin: 30px auto;
-    padding: 20px 50px;
+.foodies-cards {
+  position: relative;
+  margin: 30px auto;
+  padding: 20px 50px;
 }
 
-section.foodies div.foodies-container .foodies-cards .food-card {
-    margin: 20px;
-    position: relative;
-    width: 90%;
-    height: 90%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+.food-card {
+  position: relative;
+  margin: 20px;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-section.foodies div.foodies-container .foodies-cards .food-card:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-    z-index: 2;
-    transform: translateY(0);
-    background: linear-gradient(180deg, transparent, var(--darkgrey));
-    transition: all 0.3s ease;
+.food-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  z-index: 2;
+  transform: translateY(0);
+  background: linear-gradient(180deg, transparent, var(--darkgrey));
+  transition: all 0.3s ease;
 }
 
 /* Food Card Image */
-
-section.foodies div.foodies-container .food-card .food-img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.food-card .food-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section.foodies div.foodies-container .food-card .food-img img {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 1s ease;
+.food-card .food-img img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 1s ease;
 }
 
-section.foodies div.foodies-container .food-card:hover .food-img img {
-    transform: translateY(-10px) scale(1.05);
+.food-card:hover .food-img img {
+  transform: translateY(-10px) scale(1.05);
 }
 
 /* Food Card Description */
-
-section.foodies div.foodies-container .food-desc {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px 10px;
-    z-index: 4;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+.food-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 10px;
+  z-index: 4;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-section.foodies div.foodies-container .food-desc .food-details h4 {
-    margin: 5px auto;
-    font-size: 1.7rem;
-    font-weight: 500;
-    font-family: "Rubik", sans-serif;
-    color: var(--lightwhite);
-    letter-spacing: 1px;
-    text-align: left;
+.food-desc .food-details h4 {
+  margin: 5px auto;
+  font-size: 1.7rem;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  color: var(--lightwhite);
+  letter-spacing: 1px;
+  text-align: left;
 }
 
-section.foodies div.foodies-container .food-desc .food-details span {
-    margin: 5px auto;
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: "Quicksand", sans-serif;
-    color: var(--lightyellow);
-    letter-spacing: 1px;
-    text-align: center;
+.food-desc .food-details span {
+  margin: 5px auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  color: var(--lightyellow);
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 /* Food Add to Cart */
-
-section.foodies div.foodies-container .food-desc .food-cart {
-    position: relative;
-    padding: 14px;
-    background: var(--darkblack);
-    border-radius: 50%;
-    box-shadow: 0 2px 6px var(--darkgrey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.food-cart {
+  position: relative;
+  padding: 14px;
+  background: var(--darkblack);
+  border-radius: 50%;
+  box-shadow: 0 2px 6px var(--darkgrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-section.foodies div.foodies-container .food-desc .food-cart.addCart {
-    background: var(--lightred);
-    box-shadow: 0 2px 6px var(--lightred);
+.food-cart.addCart {
+  background: var(--lightred);
+  box-shadow: 0 2px 6px var(--lightred);
 }
 
-section.foodies div.foodies-container .food-desc .food-cart img {
-    width: 28px;
-    height: 28px;
-    user-select: none;
+.food-cart img {
+  width: 28px;
+  height: 28px;
+  user-select: none;
 }
 
-section.foodies div.foodies-container .food-desc .food-cart img:nth-child(1) {
-    opacity: 1;
-	visibility: visible;
-    transform: scale(1);
-	transition: all 0.4s ease;
-}
-section.foodies div.foodies-container .food-desc .food-cart img:nth-child(2) {
-    position: absolute;
-	top: 50%; left: 50%;
-    opacity: 0;
-	visibility: hidden;
-    transform: translate(-50%,-50%) scale(0);
-	transition: all 0.4s ease;
+.food-cart img:nth-child(1) {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: all 0.4s ease;
 }
 
-section.foodies div.foodies-container .food-desc #dish_1.food-cart.addCart img:nth-child(1),
-section.foodies div.foodies-container .food-desc #dish_2.food-cart.addCart img:nth-child(1),
-section.foodies div.foodies-container .food-desc #dish_3.food-cart.addCart img:nth-child(1),
-section.foodies div.foodies-container .food-desc #dish_4.food-cart.addCart img:nth-child(1),
-section.foodies div.foodies-container .food-desc #dish_5.food-cart.addCart img:nth-child(1),
-section.foodies div.foodies-container .food-desc #dish_6.food-cart.addCart img:nth-child(1),
-section.foodies div.foodies-container .food-desc #dish_7.food-cart.addCart img:nth-child(1),
-section.foodies div.foodies-container .food-desc #dish_8.food-cart.addCart img:nth-child(1),
-section.foodies div.foodies-container .food-desc #dish_9.food-cart.addCart img:nth-child(1),
-section.foodies div.foodies-container .food-desc #dish_10.food-cart.addCart img:nth-child(1) {
-    opacity: 0;
-	visibility: hidden;
-    transform: scale(0);
+.food-cart img:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.4s ease;
 }
 
-section.foodies div.foodies-container .food-desc #dish_1.food-cart.addCart img:nth-child(2),
-section.foodies div.foodies-container .food-desc #dish_2.food-cart.addCart img:nth-child(2),
-section.foodies div.foodies-container .food-desc #dish_3.food-cart.addCart img:nth-child(2),
-section.foodies div.foodies-container .food-desc #dish_4.food-cart.addCart img:nth-child(2),
-section.foodies div.foodies-container .food-desc #dish_5.food-cart.addCart img:nth-child(2),
-section.foodies div.foodies-container .food-desc #dish_6.food-cart.addCart img:nth-child(2),
-section.foodies div.foodies-container .food-desc #dish_7.food-cart.addCart img:nth-child(2),
-section.foodies div.foodies-container .food-desc #dish_8.food-cart.addCart img:nth-child(2),
-section.foodies div.foodies-container .food-desc #dish_9.food-cart.addCart img:nth-child(2),
-section.foodies div.foodies-container .food-desc #dish_10.food-cart.addCart img:nth-child(2) {
-    opacity: 1;
-	visibility: visible;
-    transform: translate(-50%,-50%) scale(1);
+#dish_1.food-cart.addCart img:nth-child(1),
+#dish_2.food-cart.addCart img:nth-child(1),
+#dish_3.food-cart.addCart img:nth-child(1),
+#dish_4.food-cart.addCart img:nth-child(1),
+#dish_5.food-cart.addCart img:nth-child(1),
+#dish_6.food-cart.addCart img:nth-child(1),
+#dish_7.food-cart.addCart img:nth-child(1),
+#dish_8.food-cart.addCart img:nth-child(1),
+#dish_9.food-cart.addCart img:nth-child(1),
+#dish_10.food-cart.addCart img:nth-child(1) {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+}
+
+#dish_1.food-cart.addCart img:nth-child(2),
+#dish_2.food-cart.addCart img:nth-child(2),
+#dish_3.food-cart.addCart img:nth-child(2),
+#dish_4.food-cart.addCart img:nth-child(2),
+#dish_5.food-cart.addCart img:nth-child(2),
+#dish_6.food-cart.addCart img:nth-child(2),
+#dish_7.food-cart.addCart img:nth-child(2),
+#dish_8.food-cart.addCart img:nth-child(2),
+#dish_9.food-cart.addCart img:nth-child(2),
+#dish_10.food-cart.addCart img:nth-child(2) {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /* Foodies Responsive Media */
-
 @media (max-width: 768px) {
-    section.foodies div.foodies-container .foodies-cards {
-        padding: 0;
-    }
+  .foodies-cards {
+    padding: 0;
+  }
 
-    section.foodies div.foodies-container .food-desc {
-        padding: 20px 5px;
-    }
+  .food-desc {
+    padding: 20px 5px;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-details h4 {
-        margin: 0;
-        font-size: 1.3rem;
-    }
+  .food-details h4 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-details span {
-        margin: 0;
-        font-size: 1.2rem;
-    }
+  .food-details span {
+    margin: 0;
+    font-size: 1.2rem;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-cart {
-        padding: 10px;
-    }
+  .food-cart {
+    padding: 10px;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-cart img {
-        width: 22px;
-        height: 22px;
-    }
+  .food-cart img {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 @media (max-width: 576px) {
-    section.foodies div.foodies-container .food-desc {
-        padding: 20px 30px;
-    }
+  .food-desc {
+    padding: 20px 30px;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-details h4 {
-        margin: 5px auto;
-        font-size: 1.5rem;
-    }
+  .food-details h4 {
+    margin: 5px auto;
+    font-size: 1.5rem;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-details span {
-        margin: 5px auto;
-        font-size: 1.3rem;
-    }
+  .food-details span {
+    margin: 5px auto;
+    font-size: 1.3rem;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-cart {
-        padding: 14px;
-    }
+  .food-cart {
+    padding: 14px;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-cart img {
-        width: 30px;
-        height: 30px;
-    }
+  .food-cart img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 440px) {
-    section.foodies div.foodies-container .food-desc {
-        padding: 20px 5px;
-    }
+  .food-desc {
+    padding: 20px 5px;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-details h4 {
-        margin: 0;
-        font-size: 1.3rem;
-    }
+  .food-details h4 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-details span {
-        margin: 0;
-        font-size: 1.2rem;
-    }
+  .food-details span {
+    margin: 0;
+    font-size: 1.2rem;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-cart {
-        padding: 10px;
-    }
+  .food-cart {
+    padding: 10px;
+  }
 
-    section.foodies div.foodies-container .food-desc .food-cart img {
-        width: 22px;
-        height: 22px;
-    }
+  .food-cart img {
+    width: 22px;
+    height: 22px;
+  }
 }

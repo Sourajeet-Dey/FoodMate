@@ -22,8 +22,7 @@ header {
     box-shadow: 0 0 30px 10px rgb(0 0 0 / 20%);
 }
 
-header.cartNavbar,
-header.showHeader {
+.cartNavbar, .showHeader {
     transform: translateY(0);
     background: var(--darkblack);
     box-shadow: 0 0 20px 10px rgb(0 0 0 / 20%);
@@ -31,19 +30,19 @@ header.showHeader {
 
 /* Navbar Logo / Brand */
 
-header nav a.navbar-brand {
+.navbar-brand {
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
 
-header nav a.navbar-brand img {
+.navbar-brand img {
     margin: 0 4px;
     width: 40px;
     height: 100%;
 }
 
-header nav a.navbar-brand span {
+.navbar-brand span {
     margin: auto 4px;
     font-size: 32px;
     font-weight: 600;
@@ -54,7 +53,7 @@ header nav a.navbar-brand span {
 
 /* Navbar Hamburger Menu */
 
-header nav button.navbar-toggler {
+.navbar-toggler {
     position: relative;
     width: 60px;
     height: 40px;
@@ -68,7 +67,7 @@ header nav button.navbar-toggler {
     align-items: center;
 }
 
-button.navbar-toggler span.navbar-toggler-icon {
+.navbar-toggler-icon {
     position: relative;
     width: 100%;
     height: 4px;
@@ -77,8 +76,8 @@ button.navbar-toggler span.navbar-toggler-icon {
     transition: all 0.2s ease;
 }
 
-button.navbar-toggler span.navbar-toggler-icon:before,
-button.navbar-toggler span.navbar-toggler-icon:after {
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -88,28 +87,28 @@ button.navbar-toggler span.navbar-toggler-icon:after {
     transition: top 0.2s 0.2s, transform 0.2s, background 0.2s;
 }
 
-button.navbar-toggler span.navbar-toggler-icon:before {
+.navbar-toggler-icon::before {
     top: -10px;
     left: 0;
 }
-button.navbar-toggler span.navbar-toggler-icon:after {
+.navbar-toggler-icon::after {
     top: 10px;
     left: 0;
 }
 
 /* Navbar Hamburger Menu Animation */
 
-button.navbar-toggler.showNavbar span.navbar-toggler-icon {
+.showNavbar .navbar-toggler-icon {
     background: transparent;
 }
 
-button.navbar-toggler.showNavbar span.navbar-toggler-icon:before {
+.showNavbar .navbar-toggler-icon::before {
     top: 0;
     transform: rotate(-45deg);
     transition: top 0.2s, transform 0.2s 0.2s;
 }
 
-button.navbar-toggler.showNavbar span.navbar-toggler-icon:after {
+.showNavbar .navbar-toggler-icon::after {
     top: 0;
     transform: rotate(45deg);
     transition: top 0.2s, transform 0.2s 0.2s;
@@ -117,7 +116,7 @@ button.navbar-toggler.showNavbar span.navbar-toggler-icon:after {
 
 /* Navbar Theme Mode */
 
-header nav div.theme_mode {
+.theme_mode {
     margin: auto 30px;
     position: relative;
     display: flex;
@@ -125,7 +124,7 @@ header nav div.theme_mode {
     align-items: center;
 }
 
-header nav div.theme_mode i {
+.theme_mode i {
     padding: 8px 13px;
     position: absolute;
     top: 50%;
@@ -139,44 +138,43 @@ header nav div.theme_mode i {
     transition: all 0.3s ease;
 }
 
-header.cartNavbar nav div.theme_mode i,
-header.showHeader nav div.theme_mode i {
+.theme_mode i {
     color: var(--mediumgrey);
     background: rgba(73, 84, 100, 0.4);
 }
 
-header nav div.theme_mode:hover i {background: rgba(255, 255, 255, 0.4)}
-header.cartNavbar nav div.theme_mode:hover i,
-header.showHeader nav div.theme_mode:hover i {background: rgba(0, 0, 0, 0.2)}
+.theme_mode:hover i {background: rgba(255, 255, 255, 0.4)}
+.cartNavbar .theme_mode:hover i,
+.showHeader .theme_mode:hover i {background: rgba(0, 0, 0, 0.2)}
 
-header nav div.theme_mode i.dark {
+.theme_mode i.dark {
     color: var(--darkwhite);
     background: var(--lightviolet);
 }
 
-header nav div.theme_mode:hover i.dark {
+.theme_mode:hover i.dark {
     color: var(--lightgrey);
     background: var(--darkmodelg);
 }
 
-header nav div.theme_mode i:nth-child(1) {opacity: 1; transform: translate(-50%, -50%) rotate(0deg);}
-header nav div.theme_mode i:nth-child(2) {opacity: 0; transform: translate(-50%, -50%) rotate(0deg);}
-header nav div.theme_mode i:nth-child(1).dark {opacity: 0; transform: translate(-50%, -50%) rotate(360deg);}
-header nav div.theme_mode i:nth-child(2).dark {opacity: 1; transform: translate(-50%, -50%) rotate(360deg);}
+.theme_mode i:nth-child(1) {opacity: 1; transform: translate(-50%, -50%) rotate(0deg);}
+.theme_mode i:nth-child(2) {opacity: 0; transform: translate(-50%, -50%) rotate(0deg);}
+.theme_mode i:nth-child(1).dark {opacity: 0; transform: translate(-50%, -50%) rotate(360deg);}
+.theme_mode i:nth-child(2).dark {opacity: 1; transform: translate(-50%, -50%) rotate(360deg);}
 
 /* Navbar Nav Links */
 
-header nav ul.navbar-nav {
+.navbar-nav {
     position: relative;
 }
 
-header nav ul.navbar-nav li.nav-item {
+.nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header nav ul.navbar-nav li.nav-item a.nav-link {
+.nav-link {
     margin: auto 10px;
     padding: 8px 14px;
     font-size: 18px;
@@ -189,19 +187,19 @@ header nav ul.navbar-nav li.nav-item a.nav-link {
     transition: all 0.3s ease;
 }
 
-header nav ul.navbar-nav li.nav-item a.nav-link:hover {
+.nav-link:hover {
     color: var(--darkwhite);
     background: rgba(111, 183, 252, 0.8);
 }
 
-header.cartNavbar nav ul.navbar-nav li.nav-item a.nav-link:hover,
-header.showHeader nav ul.navbar-nav li.nav-item a.nav-link:hover {
+.cartNavbar .nav-link:hover,
+.showHeader .nav-link:hover {
     color: var(--mediumgrey);
     background: rgba(73, 84, 100, 0.4);
 }
 
 /* Cart */
-header nav ul.navbar-nav li.nav-item a.cart-link {
+.cart-link {
     position: relative;
     color: var(--darkblack);
     background: var(--lightcyan);
@@ -211,25 +209,25 @@ header nav ul.navbar-nav li.nav-item a.cart-link {
     transition: all 0.3s ease;
 }
 
-header nav ul.navbar-nav li.nav-item a.cart-link:hover {
+.cart-link:hover {
     color: var(--lightblack);
     background: rgba(111, 183, 252, 1);
 }
 
-header.cartNavbar nav ul.navbar-nav li.nav-item a.cart-link:hover,
-header.showHeader nav ul.navbar-nav li.nav-item a.cart-link:hover {
+.cartNavbar .cart-link:hover,
+.showHeader .cart-link:hover {
     color: var(--lightwhite);
     background: var(--lightblack);
 }
 
-header nav ul.navbar-nav li.nav-item a.cart-link img {
+.cart-link img {
     width: 30px;
     height: 100%;
     margin: auto 5px;
     transition: all 0.2s ease;
 }
 
-header nav ul.navbar-nav li.nav-item a.cart-link span {
+.cart-link span {
     margin: auto 5px;
     padding: 1px 5px;
     font-size: 16px;
@@ -241,13 +239,13 @@ header nav ul.navbar-nav li.nav-item a.cart-link span {
     transition: all 0.1s ease;
 }
 
-header nav ul.navbar-nav li.nav-item a.cart-link:hover span {
+.cart-link:hover span {
     color: var(--lightwhite);
     background: var(--lightblack);
 }
 
-header.cartNavbar nav ul.navbar-nav li.nav-item a.cart-link:hover span,
-header.showHeader nav ul.navbar-nav li.nav-item a.cart-link:hover span {
+.cartNavbar .cart-link:hover span,
+.showHeader .cart-link:hover span {
     background: var(--darkblack);
     /* color: var(--darkgrey); background: var(--lightcyan); */
 }
@@ -255,18 +253,18 @@ header.showHeader nav ul.navbar-nav li.nav-item a.cart-link:hover span {
 /* Navbar Responsive Media */
 
 @media (max-width: 1140px) {
-    header nav ul.navbar-nav li.nav-item a.nav-link {
+    .nav-link {
         margin: auto 6px;
         padding: 8px 12px;
         font-size: 16px;
     }
 
-    header nav ul.navbar-nav li.nav-item a.cart-link img {
+    .cart-link img {
         width: 26px;
         margin: auto 4px;
     }
 
-    header nav ul.navbar-nav li.nav-item a.cart-link span {
+    .cart-link span {
         margin: auto 4px;
         padding: 1px 4px;
         font-size: 14px;
@@ -275,7 +273,7 @@ header.showHeader nav ul.navbar-nav li.nav-item a.cart-link:hover span {
 }
 
 @media (max-width: 1040px) {
-    header nav ul.navbar-nav li.nav-item a.nav-link {
+    .nav-link {
         margin: auto 3px;
     }
 }
@@ -285,19 +283,19 @@ header.showHeader nav ul.navbar-nav li.nav-item a.cart-link:hover span {
         background: var(--lightblue);
     }
 
-    header nav ul.navbar-nav li.nav-item a.nav-link {
+    .nav-link {
         margin: 10px;
         padding: 8px 14px;
         width: 100%;
     }
 
-    header nav div.theme_mode {
+    .theme_mode {
         display: none
     }
 }
 
 @media (max-width: 768px) {
-    header nav a.navbar-brand span {
+    .navbar-brand span {
         display: none;
     }
 }
@@ -313,7 +311,7 @@ header.showHeader nav ul.navbar-nav li.nav-item a.cart-link:hover span {
         padding: 0 12px;
     }
 
-    header nav a.navbar-brand img {
+    .navbar-brand img {
         width: 36px;
     }
 }

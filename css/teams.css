@@ -8,11 +8,11 @@
 
 /* Team Section Styles Start */
 
-section.team {
+.team {
     position: relative;
 }
 
-section.team div.team-container {
+.team-container {
     position: relative;
     margin: 50px auto 20px;
     padding: 20px 10px;
@@ -21,7 +21,7 @@ section.team div.team-container {
 
 /* Team Head */
 
-section.team div.team-container h2.team-head {
+.team-head {
     position: relative;
     margin: 20px auto;
     display: flex;
@@ -30,7 +30,7 @@ section.team div.team-container h2.team-head {
     flex-direction: column;
 }
 
-section.team div.team-container h2.team-head span {
+.team-head span {
     position: relative;
     margin: 30px auto 10px;
     font-size: 4rem;
@@ -41,7 +41,7 @@ section.team div.team-container h2.team-head span {
     letter-spacing: 1px;
 }
 
-section.team div.team-container h2.team-head span:after {
+.team-head span::after {
     content: "";
     width: 70%;
     height: 5px;
@@ -54,7 +54,7 @@ section.team div.team-container h2.team-head span:after {
     z-index: -1;
 }
 
-section.team div.team-container h2.team-head img {
+.team-head img {
     margin: 10px auto 20px;
     width: 56px;
     height: 56px;
@@ -62,7 +62,7 @@ section.team div.team-container h2.team-head img {
 
 /* Team Members */
 
-section.team div.team-container .team-members {
+.team-members {
     position: relative;
     margin: 20px auto;
     padding: 30px auto;
@@ -72,7 +72,7 @@ section.team div.team-container .team-members {
     flex-wrap: wrap;
 }
 
-section.team div.team-container .team-members .team-card {
+.team-card {
     margin: 20px;
     padding: 10px auto;
     display: flex;
@@ -82,7 +82,7 @@ section.team div.team-container .team-members .team-card {
     transition: all 0.3s ease;
 }
 
-section.team div.team-container .team-members .team-card img {
+.team-card img {
     margin: 8px;
     padding: 26px;
     width: 160px;
@@ -93,7 +93,7 @@ section.team div.team-container .team-members .team-card img {
     transition: all 0.3s ease;
 }
 
-section.team div.team-container .team-members .team-card h3 {
+.team-card h3 {
     margin: 10px auto -10px;
     font-size: 1.6rem;
     font-weight: 600;
@@ -103,7 +103,7 @@ section.team div.team-container .team-members .team-card h3 {
     letter-spacing: 1px;
 }
 
-section.team div.team-container .team-members .team-card p {
+.team-card p {
     margin: 10px;
     font-size: 1.5rem;
     font-weight: 700;
@@ -113,38 +113,38 @@ section.team div.team-container .team-members .team-card p {
     letter-spacing: 0.5px;
 }
 
-section.team div.team-container .team-members .team-card span i {
+.team-card span i {
     margin: 0 10px;
     font-size: 1.4rem;
     color: var(--lightblack);
     transition: all 0.2s ease;
 }
 
-section.team div.team-container .team-members .team-card span i:hover {
+.team-card span i:hover {
     color: var(--lightred);
 }
 
 /* Team Responsive Media */
 
 @media (max-width: 992px) {
-    section.team div.team-container h2.team-head span {
+    .team-head span {
         font-size: 3rem;
     }
 
-    section.team div.team-container .team-members .team-card img {
+    .team-card img {
         padding: 20px;
         width: 140px;
     }
 
-    section.team div.team-container .team-members .team-card h3 {
+    .team-card h3 {
         font-size: 1.4rem;
     }
 
-    section.team div.team-container .team-members .team-card p {
+    .team-card p {
         font-size: 1.3rem;
     }
 
-    section.team div.team-container .team-members .team-card span i {
+    .team-card span i {
         font-size: 1.1rem;
     }
 }

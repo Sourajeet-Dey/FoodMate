@@ -1,195 +1,188 @@
 /* Main Font in (style.css) */
-
 /* All Custom Fonts in (style.css) */
 /* Add / Change if required! */
-
 /* All Custom Colors in (style.css) || [:root] || */
 /* Add / Change if required! */
-
 /* Home Section Styles Start */
-
-section.home {
-    position: relative;
-    /* height: 100vh; */
-    background: url(../img/bannerbg_light.png) no-repeat center / cover;
-    transition: all 0.3s ease;
-    transition-delay: 0.1s;
+.home {
+  position: relative;
+  /* height: 100vh; */
+  background: url(../img/bannerbg_light.png) no-repeat center / cover;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
 }
 
-section.home div.home-container {
-    position: relative;
-    padding: 150px 40px 60px;
+.home-container {
+  position: relative;
+  padding: 150px 40px 60px;
 }
 
 /* Home Text Div */
-
-section.home div.home-container .home_text {
-    position: relative;
-    margin: 20px auto;
-    padding: 10px 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.home_text {
+  position: relative;
+  margin: 20px auto;
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-section.home div.home-container .home_text span {
-    margin: 20px auto;
-    padding: 2px 40px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: "Quicksand", sans-serif;
-    color: var(--lightyellow);
-    border-radius: 50px;
-    text-align: center;
-    background: transparent;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.4);
+.home_text span {
+  margin: 20px auto;
+  padding: 2px 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  color: var(--lightyellow);
+  border-radius: 50px;
+  text-align: center;
+  background: transparent;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.4);
 }
 
-section.home div.home-container .home_text h2 {
-    margin: 30px auto;
-    font-size: 6rem;
-    font-weight: 600;
-    font-family: "Vegan", sans-serif;
-    color: var(--darkwhite);
-    text-align: center;
-    letter-spacing: 5px;
-    word-spacing: 5px;
-    transition: all 0.3s ease;
-    text-shadow: 1px 1px 6px rgba(16, 55, 92, 1),
-        2px 2px 6px rgba(16, 55, 92, 1), 3px 3px 6px rgba(16, 55, 92, 1),
-        4px 4px 6px rgba(16, 55, 92, 1), 5px 5px 6px rgba(16, 55, 92, 1),
-        8px 8px 0 rgba(0, 0, 0, 0.2);
+.home_text h2 {
+  margin: 30px auto;
+  font-size: 6rem;
+  font-weight: 600;
+  font-family: "Vegan", sans-serif;
+  color: var(--darkwhite);
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 6px rgba(16, 55, 92, 1),
+    2px 2px 6px rgba(16, 55, 92, 1), 3px 3px 6px rgba(16, 55, 92, 1),
+    4px 4px 6px rgba(16, 55, 92, 1), 5px 5px 6px rgba(16, 55, 92, 1),
+    8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-section.home div.home-container .home_text p {
-    margin: 10px auto;
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: "Quicksand", sans-serif;
-    color: var(--lightwhite);
-    text-align: center;
-    line-height: 40px;
+.home_text p {
+  margin: 10px auto;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  color: var(--lightwhite);
+  text-align: center;
+  line-height: 40px;
 }
 
-section.home div.home-container .home_text button.btn-order {
-    margin: 40px auto;
-    padding: 10px 40px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    font-family: "Rubik", sans-serif;
-    color: var(--darkwhite);
-    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(45deg, #0478e9 10%, #20fdee 60%);
-    background-size: 140%;
-    border: none;
-    border-radius: 30px;
-    text-align: center;
-    transition: all 0.3s ease;
+.home_text button.btn-order {
+  margin: 40px auto;
+  padding: 10px 40px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  color: var(--darkwhite);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #0478e9 10%, #20fdee 60%);
+  background-size: 140%;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
-section.home div.home-container .home_text button.btn-order:hover {
-    background-position: center;
+.home_text button.btn-order:hover {
+  background-position: center;
 }
 
 /* Home Image Div */
-
-section.home div.home-container .home_img {
-    position: relative;
-    margin: 10px auto;
-    padding: 5px 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.home_img {
+  position: relative;
+  margin: 10px auto;
+  padding: 5px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section.home div.home-container .home_img img {
-    width: 70%;
-    height: 100%;
-    -webkit-box-reflect: below -80px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
+.home_img img {
+  width: 70%;
+  height: 100%;
+  -webkit-box-reflect: below -80px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
 }
 
 /* Home Responsive Media */
-
 @media (max-width: 768px) {
-    section.home div.home-container {
-        padding: 80px 40px 60px;
-    }
+  .home-container {
+    padding: 80px 40px 60px;
+  }
 
-    section.home div.home-container .home_text h2 {
-        margin: 25px auto;
-        font-size: 4rem;
-        text-shadow: 1px 1px 6px rgba(16, 55, 92, 1),
-            2px 2px 6px rgba(16, 55, 92, 1), 3px 3px 6px rgba(16, 55, 92, 1),
-            4px 4px 6px rgba(16, 55, 92, 1), 5px 5px 0 rgba(0, 0, 0, 0.2);
-    }
+  .home_text h2 {
+    margin: 25px auto;
+    font-size: 4rem;
+    text-shadow: 1px 1px 6px rgba(16, 55, 92, 1),
+      2px 2px 6px rgba(16, 55, 92, 1), 3px 3px 6px rgba(16, 55, 92, 1),
+      4px 4px 6px rgba(16, 55, 92, 1), 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
 
-    section.home div.home-container .home_text p {
-        margin: 5px auto;
-        font-size: 1.5rem;
-        line-height: 30px;
-    }
+  .home_text p {
+    margin: 5px auto;
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
 
-    section.home div.home-container .home_text button.btn-order {
-        margin: 30px auto;
-        padding: 8px 30px;
-        font-size: 1.2rem;
-        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
-        border-radius: 20px;
-    }
+  .home_text button.btn-order {
+    margin: 30px auto;
+    padding: 8px 30px;
+    font-size: 1.2rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+  }
 
-    section.home div.home-container .home_img img {
-        width: 100%;
-        -webkit-box-reflect: below -10px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
-    }
+  .home_img img {
+    width: 100%;
+    -webkit-box-reflect: below -10px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
+  }
 }
 
 @media (max-width: 490px) {
-    section.home div.home-container {
-        padding: 80px 0 60px;
-    }
+  .home-container {
+    padding: 80px 0 60px;
+  }
 
-    section.home div.home-container .home_text span {
-        font-size: 1.2rem;
-        box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
-    }
+  section.home div.home-container .home_text span {
+    font-size: 1.2rem;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+  }
 
-    section.home div.home-container .home_text h2 {
-        font-size: 3rem;
-    }
+  section.home div.home-container .home_text h2 {
+    font-size: 3rem;
+  }
 
-    section.home div.home-container .home_text p {
-        font-size: 1.4rem;
-    }
+  section.home div.home-container .home_text p {
+    font-size: 1.4rem;
+  }
 
-    section.home div.home-container .home_text button.btn-order {
-        margin: 24px auto;
-        font-size: 1.2rem;
-    }
+  section.home div.home-container .home_text button.btn-order {
+    margin: 24px auto;
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 340px) {
-    section.home div.home-container .home_text span {
-        font-size: 1rem;
-        padding: 2px 20px;
-    }
+  section.home div.home-container .home_text span {
+    font-size: 1rem;
+    padding: 2px 20px;
+  }
 
-    section.home div.home-container .home_text h2 {
-        margin: 20px auto;
-        font-size: 2rem;
-        text-shadow: 1px 1px 6px rgba(16, 55, 92, 1),
-            2px 2px 6px rgba(16, 55, 92, 1), 4px 4px 0 rgba(0, 0, 0, 0.2);
-    }
+  section.home div.home-container .home_text h2 {
+    margin: 20px auto;
+    font-size: 2rem;
+    text-shadow: 1px 1px 6px rgba(16, 55, 92, 1),
+      2px 2px 6px rgba(16, 55, 92, 1), 4px 4px 0 rgba(0, 0, 0, 0.2);
+  }
 
-    section.home div.home-container .home_text p {
-        font-size: 1rem;
-    }
+  section.home div.home-container .home_text p {
+    font-size: 1rem;
+  }
 
-    section.home div.home-container .home_text button.btn-order {
-        margin: 15px auto;
-        padding: 6px 20px;
-        font-size: 1rem;
-    }
+  section.home div.home-container .home_text button.btn-order {
+    margin: 15px auto;
+    padding: 6px 20px;
+    font-size: 1rem;
+  }
 }
