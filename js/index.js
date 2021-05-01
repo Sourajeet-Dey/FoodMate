@@ -58,8 +58,12 @@ $(".theme_mode i").click(function () {
 
 // Navbar Toggle
 
-$(".navbar-toggler").click(function () {
+$(".navbar-toggler, .nav-link").click(function () {
     $(".navbar-toggler").toggleClass("showNavbar");
+});
+
+$(".nav-link").click(function () {
+    $(".navbar-collapse").collapse("hide");
 });
 
 // ****************************************************************************
