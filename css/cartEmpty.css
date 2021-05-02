@@ -1,0 +1,151 @@
+/* Main Font in (style.css) */
+
+/* All Custom Fonts in (style.css) */
+/* Add / Change if required! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Cart Empty Styles Start */
+
+section.cartEmpty {
+    position: relative;
+}
+
+section.cartEmpty div.cartEmpty-container {
+    position: relative;
+    margin: 60px auto;
+    padding: 50px 20px;
+}
+
+/* Cart Head */
+
+section.cartEmpty div.cartEmpty-container h2.cart-head {
+    position: relative;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.cartEmpty div.cartEmpty-container h2.cart-head span {
+    position: relative;
+    margin: 30px auto 10px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: "Rancho", sans-serif;
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+section.cartEmpty div.cartEmpty-container h2.cart-head span:after {
+    content: "";
+    width: 70%;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -100%);
+    border-radius: 100%;
+    background: var(--lightcyan);
+    z-index: -1;
+}
+
+section.cartEmpty div.cartEmpty-container h2.cart-head img {
+    margin: 10px auto 20px;
+    width: 56px;
+    height: 56px;
+}
+
+/* Cart Empty Div */
+
+section.cartEmpty div.cartEmpty-container .cart_empty {
+    position: relative;
+    margin: 100px auto -200px;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.cartEmpty div.cartEmpty-container .cart_empty img {
+    margin: 20px auto;
+    margin: 20px auto;
+    width: 30%;
+    height: 100%;
+    filter: invert(0);
+    opacity: 0.8;
+}
+
+section.cartEmpty div.cartEmpty-container .cart_empty h3 {
+    margin: 20px auto 10px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: var(--lightblack);
+    text-align: center;
+}
+
+section.cartEmpty div.cartEmpty-container .cart_empty p {
+    margin: 10px auto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightgrey);
+    text-align: center;
+}
+
+section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart {
+    margin: 20px auto;
+    padding: 6px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: var(--lightwhite);
+    background: var(--lightred);
+    border: 3.5px solid var(--lightred);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart:hover {
+    color: var(--darkgrey);
+    background: transparent;
+}
+
+/* Cart Empty Dark Theme */
+
+body.dark section.cartEmpty div.cartEmpty-container h2.cart-head span,
+body.dark section.cartEmpty div.cartEmpty-container .cart_empty h3,
+body.dark section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart:hover {
+    color: var(--lightwhite);
+}
+
+body.dark section.cartEmpty div.cartEmpty-container .cart_empty img {
+    filter: invert(1);
+}
+
+/* Cart Empty Responsive Media */
+
+@media (max-width: 442px) {
+    section.cartEmpty div.cartEmpty-container h2.cart-head span {
+        font-size: 3rem;
+    }
+
+    section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart {
+        padding: 4px 20px;
+        font-size: 1rem;
+    }
+
+    section.cartEmpty div.cartEmpty-container .cart_empty h3 {
+        font-size: 2rem;
+    }
+
+    section.cartEmpty div.cartEmpty-container .cart_empty p {
+        font-size: 1.2rem;
+    }
+}

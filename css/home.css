@@ -109,6 +109,7 @@ section.home div.home-container .home_img img {
     width: 70%;
     height: 100%;
     -webkit-box-reflect: below -80px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
 }
 
 /* Home Responsive Media */
