@@ -5,6 +5,8 @@
 /* Dark Mode Theme Styles Start */
 
 /* ============================================================================== */
+/* Index Page Dark Theme */
+/* ============================================================================== */
 /* Header Section Dark Theme */
 
 body.dark header,
@@ -134,6 +136,46 @@ body.dark .pattern-dots {
 
 body.dark footer.footer-container p {
     color: var(--lightgrey);
+}
+
+/* ============================================================================== */
+/* Cart Page Dark Theme */
+/* ============================================================================== */
+/* Cart Item Dark Theme */
+
+body.dark section.cartItem div.cartItem-container h2.cart-head span {
+    color: var(--lightwhite);
+}
+
+body.dark section.cartItem div.cartItem-container .cart_item {
+    background: var(--darkmodebg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+body.dark section.cartItem div.cartItem-container .cart_item .item_name h4 {
+    color: var(--lightwhite);
+}
+
+body.dark section.cartItem div.cartItem-container .cart_item .item_details h6 p {
+    color: var(--lightyellow);
+    -webkit-text-stroke: 0.4px var(--lightyellow);
+}
+
+body.dark section.cartItem div.cartItem-container .cart_item .item_details .item_quantity i {
+    color: var(--lightwhite);
+}
+
+/* ============================================================================== */
+/* Cart Empty Dark Theme */
+
+body.dark section.cartEmpty div.cartEmpty-container h2.cart-head span,
+body.dark section.cartEmpty div.cartEmpty-container .cart_empty h3,
+body.dark section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart:hover {
+    color: var(--lightwhite);
+}
+
+body.dark section.cartEmpty div.cartEmpty-container .cart_empty img {
+    filter: invert(1);
 }
 
 /* ============================================================================== */
