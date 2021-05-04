@@ -9,6 +9,7 @@
 /* Cart Empty Styles Start */
 
 section.cartEmpty {
+    display: none;
     position: relative;
 }
 
@@ -115,18 +116,6 @@ section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart {
 section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart:hover {
     color: var(--darkgrey);
     background: transparent;
-}
-
-/* Cart Empty Dark Theme */
-
-body.dark section.cartEmpty div.cartEmpty-container h2.cart-head span,
-body.dark section.cartEmpty div.cartEmpty-container .cart_empty h3,
-body.dark section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart:hover {
-    color: var(--lightwhite);
-}
-
-body.dark section.cartEmpty div.cartEmpty-container .cart_empty img {
-    filter: invert(1);
 }
 
 /* Cart Empty Responsive Media */
