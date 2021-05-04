@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/darkmode.css" />
     <link rel="stylesheet" href="./css/loader.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/cartItem.css" />
     <link rel="stylesheet" href="./css/cartEmpty.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
@@ -69,6 +70,55 @@
         </nav>
     </header>
     <!-- Header End -->
+
+    <!-- Cart Item Start -->
+    <section class="cartItem">
+        <div class="container cartItem-container">
+            <h2 class="cart-head">
+                <span>My Cart</span>
+                <img src="./img/cart.png" />
+            </h2>
+
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-lg-4 item_name">
+                        <p>1</p>
+                        <img src="./img/food.png" />
+                        <h4>Dish Name</h4>
+                    </div>
+
+                    <div class="col-lg-7 item_details">
+                        <h6>
+                            <p>Rs. 100.00</p>
+                            <span>Price</span>
+                        </h6>
+                        <div class="item_quantity">
+                            <i class="fa fa-minus"></i>
+                            <span>2</span>
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <h6>
+                            <p>Rs. 200.00</p>
+                            <span>Total</span>
+                        </h6>
+                    </div>
+
+                    <div class="col-lg-1 item_remove">
+                        <img src="./img/cart_remove.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart_checkout">
+                <span class="cart_amount">
+                    <p>Rs. 200.00</p>
+                    <i>Pay Amount</i>
+                </span>
+                <a href="./#" class="btn btn-payment">Payments</a>
+            </div>
+        </div>
+    </section>
+    <!-- Cart Item End -->
 
     <!-- Cart Empty Start -->
     <section class="cartEmpty">

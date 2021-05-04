@@ -89,6 +89,11 @@ html.dark ::-webkit-scrollbar-thumb {
     src: url("../fonts/Vegan.ttf");
 }
 
+@font-face {
+    font-family: "Housttely";
+    src: url("../fonts/Housttely.ttf");
+}
+
 /* User Select None */
 
 img, .noselect {
