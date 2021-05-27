@@ -54,9 +54,10 @@ body.dark {
     --lightyellow: #fddb3a;
     --lightred: #ff005c;
     --lightblue: #0075f6;
-    --lightgreen: #00ff7f;
+    --lightgreen: #2ec752;
     --lightcyan: #20fdee;
     --lightviolet: #6961f5;
+    --darkviolet: #5d13e7;
 }
 
 /* Custom Scroll Bar */
@@ -96,7 +97,8 @@ html.dark ::-webkit-scrollbar-thumb {
 
 /* User Select None */
 
-img, .noselect {
+img,
+.noselect {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
