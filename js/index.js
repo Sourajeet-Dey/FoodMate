@@ -2,12 +2,12 @@
 
 $(window).on("load", function () {
     $("#preloader").css({
-        transform: "translateY(-100%)",
-        "transition-delay": "0.6s",
+        clipPath: "circle(0% at 50% 50%)",
+        transitionDelay: "0.6s",
     });
     $(".loader").css({
         opacity: "0",
-        "transition-delay": "0.3s",
+        transitionDelay: "0.8s",
     });
 });
 
@@ -102,9 +102,9 @@ $(".ScrolltoTop").click(function () {
 
 // ****************************************************************************
 
-// Sweetalert Toast Alert: Add to Cart
+// Sweetalert Toast Alert: Add/Remove Cart
 
-$.toast = Swal.mixin({
+var toast = Swal.mixin({
     toast: true,
     position: "top-end",
     showConfirmButton: false,
@@ -113,7 +113,7 @@ $.toast = Swal.mixin({
     padding: "15px 20px",
     showClass: { popup: "animate__animated animate__bounceIn" },
     hideClass: { popup: "animate__animated animate__bounceOut" },
-    timer: 3000,
+    timer: 1000,
     timerProgressBar: true,
     didOpen: (toast) => {
         toast.addEventListener("mouseenter", Swal.stopTimer);
@@ -123,106 +123,33 @@ $.toast = Swal.mixin({
 
 // ****************************************************************************
 
-// Add to Cart Counter (Food Cart)
+// Add/Remove Cart Alert
 
-var counter = 0;
-var cartCounter = localStorage.getItem("cartCounter");
+/*
+toast.fire({
+    icon: "success",
+    title: '<span class="text-success">Item Added Successfully!</span>',
+});
 
-// Local Storage
+toast.fire({
+    icon: "warning",
+    title: '<span class="text-warning">Item Removed from Cart!</span>',
+});
+*/
 
-// if (cartCounter === "enabled") {
-//     counter++;
-//     $(".badge-count").text(counter);
-//     localStorage.setItem("cartCounter", "enabled");
-// }
+let foodItem = document.querySelectorAll(".food-cart");
 
-// $(".food-cart").click(function () {
-//     var cartCounter = localStorage.getItem("cartCounter");
-
-//     if (cartCounter !== "enabled") {
-//         counter++;
-//         $(".badge-count").text(counter);
-//         localStorage.setItem("cartCounter", "enabled");
-//     } else {
-//         counter--;
-//         $(".badge-count").text(counter);
-//         localStorage.setItem("cartCounter", null);
-//     }
-// });
-
-// If / Else
-
-// $(".food-cart").click(function () {
-//     if ($(".food-cart img:nth-child(1)").css("visibility", "visible")) {
-//         counter++;
-//         $(".badge-count").text(counter);
-//     }
-//     else if ($(".food-cart img:nth-child(1)").css("visibility", "hidden")) {
-//         counter--;
-//         $(".badge-count").text(counter);
-//     }
-// });
-
-$(".food-cart img:nth-child(1)").click(function () {
-    counter++;
-    $(".badge-count").text(counter);
-    $.toast.fire({
-        icon: "success",
-        title: '<span class="text-success">Item Added Successfully!</span>',
+for (let i = 0; i < foodItem.length; i++) {
+    foodItem[i].addEventListener("click", () => {
+        foodItem[i].classList.add("addCart");
+        setTimeout(() => {
+            foodItem[i].classList.remove("addCart");
+        }, 1000);
+        toast.fire({
+            icon: "success",
+            title: '<span class="text-success">Item Added Successfully!</span>',
+        });
     });
-});
-
-$(".food-cart img:nth-child(2)").click(function () {
-    counter--;
-    $(".badge-count").text(counter);
-    $.toast.fire({
-        icon: "warning",
-        title: '<span class="text-warning">Item Removed from Cart!</span>',
-    });
-});
-
-// ****************************************************************************
-
-// Add to Cart Btn: Each Dishes Individual Id
-
-$("#dish_1 img").click(function () {
-    $("#dish_1").toggleClass("addCart");
-});
-
-$("#dish_2 img").click(function () {
-    $("#dish_2").toggleClass("addCart");
-});
-
-$("#dish_3 img").click(function () {
-    $("#dish_3").toggleClass("addCart");
-});
-
-$("#dish_4 img").click(function () {
-    $("#dish_4").toggleClass("addCart");
-});
-
-$("#dish_5 img").click(function () {
-    $("#dish_5").toggleClass("addCart");
-});
-
-$("#dish_6 img").click(function () {
-    $("#dish_6").toggleClass("addCart");
-});
-
-$("#dish_7 img").click(function () {
-    $("#dish_7").toggleClass("addCart");
-});
-
-$("#dish_8 img").click(function () {
-    $("#dish_8").toggleClass("addCart");
-});
-
-$("#dish_9 img").click(function () {
-    $("#dish_9").toggleClass("addCart");
-});
-
-$("#dish_10 img").click(function () {
-    $("#dish_10").toggleClass("addCart");
-});
+}
 
 // ****************************************************************************
