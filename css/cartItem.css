@@ -67,7 +67,7 @@ section.cartItem div.cartItem-container .cart_checkout {
     margin: auto;
     padding: 12px 10px 14px;
     background: var(--lightwhite);
-    border-radius: 20px 20px 0 0;
+    border-radius: 8px 8px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
