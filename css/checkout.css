@@ -1,0 +1,188 @@
+/* Main Font in (style.css) */
+
+/* All Custom Fonts in (style.css) */
+/* Add / Change if required! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Payments Checkout Styles Start */
+
+section.cartCheckout {
+    position: relative;
+}
+
+div.checkout-container {
+    position: relative;
+    margin: 60px auto;
+    padding: 50px 20px;
+}
+
+/* Cart Head */
+
+div.checkout-container h2.cart-head {
+    position: relative;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.checkout-container h2.cart-head span {
+    position: relative;
+    margin: 30px auto 10px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: "Rancho", sans-serif;
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+div.checkout-container h2.cart-head span:after {
+    content: "";
+    width: 70%;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -100%);
+    border-radius: 100%;
+    background: var(--lightcyan);
+    z-index: -1;
+}
+
+div.checkout-container h2.cart-head img {
+    margin: 10px auto 20px;
+    width: 56px;
+    height: 56px;
+}
+
+/* Cart Checkout Details */
+
+div.checkout-details {
+    margin: 40px auto;
+    padding: 10px;
+    max-width: 85%;
+}
+
+div.checkout-details .coupon_add {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.025);
+    color: var(--lightblack);
+    border-top: 3px solid var(--lightred);
+}
+
+div.checkout-details .coupon_add i {
+    margin: auto 8px;
+    display: inline;
+    font-size: 1.2rem;
+    color: var(--lightred);
+    vertical-align: middle;
+}
+
+div.checkout-details .coupon_add p {
+    margin: auto 8px;
+    display: inline;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: var(--lightblack);
+}
+
+div.checkout-details .coupon_add p a {
+    color: var(--darkblack);
+}
+
+div.checkout-details .coupon_add p a:hover {
+    color: var(--lightred);
+    text-decoration: none;
+}
+
+/* Billing Details */
+
+div.user_details {
+    position: relative;
+    margin: 50px auto;
+}
+
+div.user_details h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: var(--lightblack);
+}
+
+div.user_details .billing form {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 10px 30px 10px 0;
+}
+
+div.user_details .billing form .form-group {
+    margin: 30px auto;
+    display: block;
+}
+
+div.user_details .billing form .form-group input,
+div.user_details .billing form .form-group textarea {
+    margin: 10px auto;
+    padding: 22px 17px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: var(--lightblack);
+    background: transparent;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: all ease 0.3s;
+}
+
+div.user_details .billing form .form-group label {
+    margin: 0 auto 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: var(--lightblack);
+}
+
+div.user_details .billing form .form-group label span {
+    color: var(--lightred);
+    font-weight: 700;
+}
+
+div.user_details .billing form .form-group input:placeholder-shown,
+div.user_details .billing form .form-group textarea:placeholder-shown {
+    font-weight: 400;
+    color: var(--lightgrey);
+    letter-spacing: 0.5px;
+    border: 2px solid rgba(155, 164, 180, 0.4);
+}
+
+div.user_details .billing form .form-group input:focus,
+div.user_details .billing form .form-group textarea:focus {
+    border: 2px solid var(--lightred);
+}
+
+div.user_details
+    .billing
+    form
+    .form-group
+    input:not(:placeholder-shown):not(:focus),
+div.user_details
+    .billing
+    form
+    .form-group
+    textarea:not(:placeholder-shown):not(:focus) {
+    border: 2px solid var(--lightgreen);
+}
+
+div.user_details .billing form .form-group input:read-only {
+    font-weight: 600;
+    border: 2px solid var(--lightblack);
+}

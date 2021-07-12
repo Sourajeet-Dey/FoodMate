@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/darkmode.css" />
     <link rel="stylesheet" href="./css/loader.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -78,7 +79,84 @@
     <!-- Header End -->
 
     <!-- Cart Checkout Start -->
-    <section class="cartCheckout"></section>
+    <section class="cartCheckout">
+        <div class="checkout-container">
+            <h2 class="cart-head">
+                <span>Checkout</span>
+                <img src="./img/cart.png" />
+            </h2>
+
+            <div class="checkout-details">
+                <div class="coupon_add">
+                    <i class="bi bi-tag-fill"></i>
+                    <p>Have a coupon? <a href="#">Click here to enter your code</a></p>
+                </div>
+
+                <div class="row user_details">
+                    <div class="col-lg-7 p-0 billing">
+                        <h2>Billing Details</h2>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="fname">First Name <span>*</span></label>
+                                <input type="text" class="form-control" placeholder=" " id="fname" name="fname" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lname">Last Name <span>*</span></label>
+                                <input type="text" class="form-control" placeholder=" " id="lname" name="lname" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Street Address <span>*</span></label>
+                                <input type="text" class="form-control" placeholder="House Number/Street Name" id="address" name="address" required />
+                                <input type="text" class="form-control" placeholder="Apartment, Landmark etc. (optional)" id="address" name="address" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="place">Town / City <span>*</span></label>
+                                <input type="text" class="form-control" placeholder=" " id="place" name="place" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="state">State (only WB)</label>
+                                <input type="text" class="form-control" placeholder="West Bengal" id="state" name="state" readonly />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="region">Country (only IN)</label>
+                                <input type="text" class="form-control" placeholder="India" id="region" name="region" readonly />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pincode">Pin Code <span>*</span></label>
+                                <input type="text" class="form-control" placeholder=" " id="pincode" name="pincode" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone <span>*</span></label>
+                                <input type="text" class="form-control" placeholder=" " id="phone" name="phone" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address <span>*</span></label>
+                                <input type="email" class="form-control" placeholder=" " id="email" name="email" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="notes">Order Notes (optional)</label>
+                                <textarea class="form-control" placeholder="Notes about your order, e.g. special notes for delivery." id="notes" name="notes" rows="4"></textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-5 p-0 payment">
+                        <h2>Payment Details</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Cart Checkout End -->
 
     <!-- Footer Start -->
