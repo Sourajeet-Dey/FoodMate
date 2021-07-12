@@ -96,17 +96,26 @@ section.contact div.contact-container .contact_form form .form-group {
 
 section.contact div.contact-container .contact_form form .form-group input,
 section.contact div.contact-container .contact_form form .form-group textarea {
-    padding: 20px;
+    padding: 23px 17px;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Quicksand", sans-serif;
     color: var(--lightblack);
     background: transparent;
     letter-spacing: 1px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    caret-color: var(--lightblue);
+    border: 2px solid var(--lightgrey);
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+section.contact div.contact-container .contact_form form .form-group input:focus,
+section.contact div.contact-container .contact_form form .form-group textarea:focus {
+    border: 2px solid var(--lightblue);
+}
+
+section.contact div.contact-container .contact_form form .form-group input:not(:placeholder-shown),
+section.contact div.contact-container .contact_form form .form-group textarea:not(:placeholder-shown) {
+    border: 2px solid var(--lightgreen);
 }
 
 section.contact div.contact-container .contact_form form .form-group input::placeholder,
@@ -116,8 +125,8 @@ section.contact div.contact-container .contact_form form .form-group textarea::p
 
 section.contact div.contact-container .contact_form form .form-group label {
     margin: auto 10px;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 600;
     font-family: "Quicksand", sans-serif;
     color: var(--lightgrey);
 }
@@ -142,11 +151,11 @@ section.contact div.contact-container .contact_form form .form-group input[type=
 
 section.contact div.contact-container .contact_form form button.btn-submit {
     margin: 5px auto;
-    padding: 3px 0;
+    padding: 5px 0;
     width: 100%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    font-family: "Rubik", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
     color: var(--lightwhite);
     background: var(--lightblue);
     border: 3px solid var(--lightblue);
