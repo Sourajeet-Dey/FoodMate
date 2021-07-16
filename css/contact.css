@@ -14,7 +14,7 @@ section.contact {
 
 section.contact div.contact-container {
     position: relative;
-    margin: 50px auto -50px;
+    margin: 50px auto -150px;
     padding: 100px 20px 0;
     width: 100%;
 }
@@ -132,21 +132,57 @@ section.contact div.contact-container .contact_form form .form-group label {
 }
 
 section.contact div.contact-container .contact_form form .form-group .form-check-group {
-    margin: auto 50px;
+    margin: auto 10px auto 20px;
     width: 100%;
 }
 
-section.contact div.contact-container .contact_form form .form-group .form-check-group .form-check {
+section.contact div.contact-container .contact_form form .form-group .form-check-group label {
     margin: auto 20px;
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-section.contact div.contact-container .contact_form form .form-group input[type='radio'] {
-    transform: scale(1.2);
-    cursor: pointer;
+section.contact div.contact-container .contact_form form .form-group .form-check-group label i {
+    width: 16px;
+    height: 16px;
+    margin: auto 10px;
+    padding: 2px;
+    border: 2px solid var(--lightgrey);
+    border-radius: 50%;
+}
+
+section.contact div.contact-container .contact_form form .form-group .form-check-group label i:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--lightgrey);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+}
+
+section.contact div.contact-container .contact_form form .form-group .form-check-group label span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightblack);
+}
+
+div.contact-container .contact_form form .form-group .form-check-group label input[type='radio'] {
+    margin: 0;
+    opacity: 0;
+}
+
+div.contact-container .contact_form form .form-group .form-check-group label input:checked + i {
+    border: 2px solid rgba(46, 200, 80, 1);
+}
+
+div.contact-container .contact_form form .form-group .form-check-group label input:checked + i:after {
+    transform: scale(1);
+    background: rgba(46, 180, 70, 1);
 }
 
 section.contact div.contact-container .contact_form form button.btn-submit {
@@ -169,11 +205,18 @@ section.contact div.contact-container .contact_form form button.btn-submit:hover
     background: transparent;
 }
 
+section.contact div.contact-container .contact_form form button.btn-submit:active,
+section.contact div.contact-container .contact_form form button.btn-submit:focus {
+    color: var(--darkgrey);
+    background: transparent;
+    border: 3px solid var(--lightgreen);
+    box-shadow: none;
+}
+
 /* Contact Responsive Media */
 
 @media (max-width: 1200px) {
-    section.contact div.contact-container .contact_form form .form-group .form-check-group,
-    section.contact div.contact-container .contact_form form .form-group .form-check-group .form-check {
+    section.contact div.contact-container .contact_form form .form-group .form-check-group {
         margin: auto 10px;
     }
 }
@@ -183,12 +226,20 @@ section.contact div.contact-container .contact_form form button.btn-submit:hover
         font-size: 3rem;
     }
 
-    section.contact div.contact-container .contact_form form .form-group .form-check-group .form-check {
+    section.contact div.contact-container .contact_form form .form-group .form-check-group label {
         margin: 10px;
     }
 
     section.contact div.contact-container .contact_form form button.btn-submit {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section.contact div.contact-container .contact_form form .form-group .form-check-group,
+    section.contact div.contact-container .contact_form form .form-group .form-check-group label {
+        margin: auto 10px;
+        padding: 0;
     }
 }
 
@@ -214,23 +265,23 @@ section.contact div.contact-container .contact_form form button.btn-submit:hover
     }
 
     section.contact div.contact-container .contact_form form .form-group .form-check-group,
-    section.contact div.contact-container .contact_form form .form-group .form-check-group .form-check {
+    section.contact div.contact-container .contact_form form .form-group .form-check-group label {
         margin: auto 10px;
         padding: 0;
     }
 }
 
 @media (max-width: 564px) {
-    section.contact div.contact-container .contact_form form .form-group .form-check-group {
-        margin: auto 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    section.contact div.contact-container .contact_form {
+        padding: 10px 20px;
     }
 
-    section.contact div.contact-container .contact_form form .form-group .form-check-group .form-check {
-        padding: 5px 0;
+    section.contact div.contact-container .contact_form form .form-group .form-check-group {
+        margin: auto 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 }
 
@@ -242,5 +293,224 @@ section.contact div.contact-container .contact_form form button.btn-submit:hover
     section.contact div.contact-container .contact_form h3 img {
         width: 42px;
         height: 42px;
+    }
+
+    section.contact div.contact-container .contact_form form .form-group .form-check-group {
+        margin: auto 10px;
+    }
+}
+
+/* Contact Feedback Ratings Experience */
+
+section.contact div.feedback_ratings {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px 10px;
+    width: 100%;
+}
+
+section.contact div.feedback_ratings div.ratings_head {
+    position: relative;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.contact div.feedback_ratings h2 {
+    position: relative;
+    margin: 10px auto 0;
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: "Rancho", sans-serif;
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+section.contact div.feedback_ratings h2 span {
+    display: block;
+    margin: 8px auto;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightgrey);
+    text-align: center;
+    letter-spacing: 0;
+}
+
+section.contact div.feedback_ratings h2:after {
+    content: "";
+    width: 60%;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -100%);
+    border-radius: 100%;
+    background: var(--lightcyan);
+    z-index: -1;
+}
+
+section.contact div.feedback_ratings img {
+    margin: 10px auto 5px;
+    width: 50px;
+    height: 50px;
+}
+
+section.contact div.feedback_ratings form {
+    position: relative;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.contact div.feedback_ratings form .form-group {
+    width: 50%;
+}
+
+section.contact div.feedback_ratings form .form-group input {
+    margin: 0 auto 20px;
+    padding: 16px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightblack);
+    background: transparent;
+    letter-spacing: 1px;
+    border: 2px solid var(--lightgrey);
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+section.contact div.feedback_ratings form .ratings {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.contact div.feedback_ratings form .ratings label {
+    position: relative;
+    margin: auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+section.contact div.feedback_ratings form .ratings label input {
+    margin: 0;
+    opacity: 0;
+}
+
+section.contact div.feedback_ratings form .ratings label img {
+    margin: 5px auto;
+    width: 80px;
+    height: auto;
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+section.contact div.feedback_ratings form .ratings label span {
+    margin: 5px auto;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightblack);
+    transform: translateY(-100%) scale(0);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+section.contact div.feedback_ratings form .ratings label img:hover,
+section.contact div.feedback_ratings form .ratings label input:checked + img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+section.contact div.feedback_ratings form .ratings label img:hover + span,
+section.contact div.feedback_ratings form .ratings label input:checked ~ span {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+section.contact div.feedback_ratings form button.btn-feedback {
+    margin: 2rem auto 1rem;
+    padding: 8px 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+    color: var(--lightwhite);
+    background: var(--lightblack);
+    transform: translateX(-5%);
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+section.contact div.feedback_ratings form button.btn-feedback:hover {
+    color: var(--darkwhite);
+    background: var(--darkgrey);
+}
+
+section.contact div.feedback_ratings form button.btn-feedback:active,
+section.contact div.feedback_ratings form button.btn-feedback:focus {
+    color: var(--darkwhite);
+    background: var(--lightgreen);
+    box-shadow: none;
+}
+
+/* Contact Feedback Ratings Experience Dark Theme */
+
+body.dark section.contact div.feedback_ratings h2,
+body.dark section.contact div.feedback_ratings form .form-group input,
+body.dark section.contact div.feedback_ratings form .ratings label span {
+    color: var(--lightwhite);
+}
+
+/* Contact Feedback Ratings Experience Responsive */
+
+@media (max-width: 992px) {
+    section.contact div.feedback_ratings form .form-group {
+        width: 75%;
+    }
+}
+
+@media (max-width: 432px) {
+    section.contact div.feedback_ratings h2 {
+        font-size: 2.2rem;
+    }
+
+    section.contact div.feedback_ratings h2 span {
+        font-size: 1.2rem;
+    }
+
+    section.contact div.feedback_ratings form button.btn-feedback {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 352px) {
+    section.contact div.feedback_ratings h2 {
+        font-size: 1.8rem;
+    }
+
+    section.contact div.feedback_ratings h2 span {
+        font-size: 1rem;
+    }
+
+    section.contact div.feedback_ratings h2:after {
+        height: 2px;
+    }
+
+    section.contact div.feedback_ratings form .form-group {
+        width: 100%;
     }
 }

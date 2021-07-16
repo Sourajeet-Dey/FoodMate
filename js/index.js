@@ -2,12 +2,8 @@
 
 $(window).on("load", function () {
     $("#preloader").css({
-        clipPath: "circle(0% at 50% 50%)",
-        transitionDelay: "0.6s",
-    });
-    $(".loader").css({
         opacity: "0",
-        transitionDelay: "0.8s",
+        clipPath: "circle(0% at 50% 50%)",
     });
 });
 
@@ -17,6 +13,18 @@ $(window).on("load", function () {
 
 $(window).scroll(function () {
     $("header").toggleClass("showHeader", window.scrollY > 50);
+});
+
+// ****************************************************************************
+
+// Checkout Brand Popup Just4Fun
+
+$("button.btn-place_order").click(function () {
+    $("section.brand_popup").addClass("popup_active");
+});
+
+$("div.brand_popup i.bi-x, section.brand_popup").click(function () {
+    $("section.brand_popup").removeClass("popup_active");
 });
 
 // ****************************************************************************

@@ -31,7 +31,17 @@
     <!-- Preloader Start -->
     <section id="preloader">
         <div class="loader">
-            <img src="./img/loader.gif" class="img-fluid" />
+            <!-- Burger Loader -->
+            <img src="./img/loader/burger.svg" class="burger img-fluid" />
+            <img src="./img/loader/top_bun.svg" class="top_bun img-fluid" />
+            <img src="./img/loader/leaves.svg" class="leaves img-fluid" />
+            <img src="./img/loader/jelly.svg" class="jelly img-fluid" />
+            <img src="./img/loader/cheese.svg" class="cheese img-fluid" />
+            <img src="./img/loader/meat.svg" class="meat img-fluid" />
+            <img src="./img/loader/bottom_bun.svg" class="bottom_bun img-fluid" />
+            <img src="./img/loader/fork.svg" class="fork img-fluid" />
+            <img src="./img/loader/knife.svg" class="knife img-fluid" />
+
             <!-- <object data="./img/loader.svg"></object> -->
         </div>
     </section>
@@ -152,12 +162,54 @@
 
                     <div class="col-lg-5 p-0 payment">
                         <h2>Payment Details</h2>
+
+                        <div class="methods">
+                            <div class="pay_via">
+                                <label for="cash">
+                                    <input type="radio" name="payment" id="cash" />
+                                    <i></i><span>Cash on delivery</span>
+                                </label>
+                                <p>Pay with cash upon delivery.</p>
+                            </div>
+
+                            <div class="pay_via">
+                                <label for="upi">
+                                    <input type="radio" name="payment" id="upi" />
+                                    <i></i><span>UPI</span>
+                                </label>
+                                <p>Pay before for safe delivery.</p>
+                            </div>
+
+                            <hr>
+                            <p class="policy">
+                                Your personal data will be used to process your order, 
+                                support your experience throughout this website, and for other
+                                purposes described in our <a href="#">privacy policy</a>.
+                            </p>
+                            <button class="btn btn-place_order">Place Order</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Cart Checkout End -->
+
+    <!-- Swiggy / Zomato Popup Start -->
+    <section class="brand_popup">
+        <div class="brand_popup">
+            <i class="bi bi-x"></i>
+            <img src="./img/burger.png" />
+            <h4>Oops!</h4>
+            <p>Order from Swiggy/Zomato!</p>
+            <p>This is Just 4 Fun!</p>
+            <span>
+                <a href="https://www.swiggy.com/" target="_blank" class="btn">Swiggy</a>
+                <a href="https://www.zomato.com/" target="_blank" class="btn">Zomato</a>
+            </span>
+        </div>
+    </section>
+    <!-- Swiggy / Zomato Popup End -->
 
     <!-- Footer Start -->
     <section class="footer">
