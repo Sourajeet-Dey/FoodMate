@@ -187,16 +187,17 @@ div.contact-container .contact_form form .form-group .form-check-group label inp
 
 section.contact div.contact-container .contact_form form button.btn-submit {
     margin: 5px auto;
-    padding: 5px 0;
+    padding: 7px 0;
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     font-family: "Merriweather", serif;
     color: var(--lightwhite);
     background: var(--lightblue);
     border: 3px solid var(--lightblue);
-    border-radius: 10px;
+    border-radius: 4px;
     letter-spacing: 1px;
+    line-height: 1.8rem;
     transition: all 0.3s ease;
 }
 
@@ -226,20 +227,18 @@ section.contact div.contact-container .contact_form form button.btn-submit:focus
         font-size: 3rem;
     }
 
-    section.contact div.contact-container .contact_form form .form-group .form-check-group label {
-        margin: 10px;
-    }
-
-    section.contact div.contact-container .contact_form form button.btn-submit {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 992px) {
     section.contact div.contact-container .contact_form form .form-group .form-check-group,
     section.contact div.contact-container .contact_form form .form-group .form-check-group label {
         margin: auto 10px;
         padding: 0;
+    }
+
+    section.contact div.contact-container .contact_form form .form-group .form-check-group label {
+        margin: 2px;
+    }
+
+    section.contact div.contact-container .contact_form form button.btn-submit {
+        font-size: 1.1rem;
     }
 }
 
@@ -375,7 +374,7 @@ section.contact div.feedback_ratings form .form-group {
 
 section.contact div.feedback_ratings form .form-group input {
     margin: 0 auto 20px;
-    padding: 16px 12px;
+    padding: 20px 15px;
     font-size: 1rem;
     font-weight: 600;
     font-family: "Quicksand", sans-serif;
@@ -492,6 +491,10 @@ body.dark section.contact div.feedback_ratings form .ratings label span {
         font-size: 1.2rem;
     }
 
+    section.contact div.feedback_ratings form .form-group {
+        width: 100%;
+    }
+
     section.contact div.feedback_ratings form button.btn-feedback {
         transform: translateX(0);
     }
@@ -508,9 +511,5 @@ body.dark section.contact div.feedback_ratings form .ratings label span {
 
     section.contact div.feedback_ratings h2:after {
         height: 2px;
-    }
-
-    section.contact div.feedback_ratings form .form-group {
-        width: 100%;
     }
 }
