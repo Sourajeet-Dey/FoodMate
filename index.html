@@ -37,7 +37,17 @@
     <!-- Preloader Start -->
     <section id="preloader">
         <div class="loader">
-            <img src="./img/loader.gif" class="img-fluid" />
+            <!-- Burger Loader -->
+            <img src="./img/loader/burger.svg" class="burger img-fluid" />
+            <img src="./img/loader/top_bun.svg" class="top_bun img-fluid" />
+            <img src="./img/loader/leaves.svg" class="leaves img-fluid" />
+            <img src="./img/loader/jelly.svg" class="jelly img-fluid" />
+            <img src="./img/loader/cheese.svg" class="cheese img-fluid" />
+            <img src="./img/loader/meat.svg" class="meat img-fluid" />
+            <img src="./img/loader/bottom_bun.svg" class="bottom_bun img-fluid" />
+            <img src="./img/loader/fork.svg" class="fork img-fluid" />
+            <img src="./img/loader/knife.svg" class="knife img-fluid" />
+
             <!-- <object data="./img/loader.svg"></object> -->
         </div>
     </section>
@@ -355,8 +365,8 @@
                     <h3>Sourajeet Dey</h3>
                     <p>Developer</p>
                     <span>
-                        <a href="#"><i class="bi bi-github"></i></a>
-                        <a href="#"><i class="bi bi-chat-square-quote-fill"></i></a>
+                        <a href="https://github.com/Sourajeet-Dey"><i class="bi bi-github"></i></a>
+                        <a href="mailto:sd2325@ee.jgec.ac.in"><i class="bi bi-chat-square-quote-fill"></i></a>
                     </span>
                 </div>
 
@@ -366,8 +376,8 @@
                     <h3>Niladri Mondal</h3>
                     <p>Designer</p>
                     <span>
-                        <a href="#"><i class="bi bi-github"></i></a>
-                        <a href="#"><i class="bi bi-chat-square-quote-fill"></i></a>
+                        <a href="https://github.com/imniladri"><i class="bi bi-github"></i></a>
+                        <a href="mailto:nm2346@ee.jgec.ac.in"><i class="bi bi-chat-square-quote-fill"></i></a>
                     </span>
                 </div>
 
@@ -377,8 +387,8 @@
                     <h3>Arpan Acharya</h3>
                     <p>Influencer</p>
                     <span>
-                        <a href="#"><i class="bi bi-github"></i></a>
-                        <a href="#"><i class="bi bi-chat-square-quote-fill"></i></a>
+                        <a href="https://github.com/Arpan173"><i class="bi bi-github"></i></a>
+                        <a href="mailto:aa2338@ee.jgec.ac.in"><i class="bi bi-chat-square-quote-fill"></i></a>
                     </span>
                 </div>
             </div>
@@ -389,6 +399,7 @@
     <!-- Contact Start -->
     <section id="contact" class="contact">
         <div class="container contact-container">
+            <!-- Contact Form Start -->
             <div class="row">
                 <div class="contact_img col-md-4">
                     <img src="./img/location.svg" class="img-fluid" />
@@ -399,7 +410,7 @@
                         <img src="./img/location.svg" width="32" />
                     </h3>
 
-                    <form>
+                    <form action="https://formspree.io/f/xyyldjdr" method="POST" name="Contact">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Your Name" name="Name" required />
                         </div>
@@ -416,19 +427,19 @@
 
                         <div class="form-group">
                             <label>Topics</label>
-                            <div class="row form-check-group">
-                                <div class="form-check col">
-                                    <input class="form-check-input" type="radio" name="Topic" value="Topic1" required />
-                                    <label class="form-check-label">Talkings</label>
-                                </div>
-                                <div class="form-check col">
-                                    <input class="form-check-input" type="radio" name="Topic" value="Topic2" required />
-                                    <label class="form-check-label">Bookings</label>
-                                </div>
-                                <div class="form-check col">
-                                    <input class="form-check-input" type="radio" name="Topic" value="Topic3" required />
-                                    <label class="form-check-label">Feedbacks</label>
-                                </div>
+                            <div class="form-check-group">
+                                <label for="talkings">
+                                    <input type="radio" id="talkings" name="Topic" value="Talkings" required />
+                                    <i></i><span>Talkings</span>
+                                </label>
+                                <label for="bookings">
+                                    <input type="radio" id="bookings" name="Topic" value="Bookings" required />
+                                    <i></i><span>Bookings</span>
+                                </label>
+                                <label for="feedbacks">
+                                    <input type="radio" id="feedbacks" name="Topic" value="Feedbacks" required />
+                                    <i></i><span>Feedbacks</span>
+                                </label>
                             </div>
                         </div>
 
@@ -441,6 +452,55 @@
                     </form>
                 </div>
             </div>
+            <!-- Contact Form End -->
+
+            <!-- Experience Start -->
+            <div class="feedback_ratings">
+                <div class="ratings_head">
+                    <h2>
+                        Share Your Experience <br>
+                        <span>Love to hear from you</span>
+                    </h2>
+                    <img src="./img/serve.png" />
+                </div>
+
+                <form action="https://formspree.io/f/xgerlzog" method="POST" name="Feedback">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" name="Name" required />
+                    </div>
+
+                    <div class="ratings">
+                        <label for="bored">
+                            <input type="radio" id="bored" name="Feedback" value="Bored" required />
+                            <img src="./img/rates/bored.png" />
+                            <span>Bored</span>
+                        </label>
+                        <label for="sad">
+                            <input type="radio" id="sad" name="Feedback" value="Sad" required />
+                            <img src="./img/rates/sad.png" />
+                            <span>Sad</span>
+                        </label>
+                        <label for="happy">
+                            <input type="radio" id="happy" name="Feedback" value="Happy" required />
+                            <img src="./img/rates/happy.png" />
+                            <span>Happy</span>
+                        </label>
+                        <label for="loved">
+                            <input type="radio" id="loved" name="Feedback" value="Loved" required />
+                            <img src="./img/rates/loved.png" />
+                            <span>Loved</span>
+                        </label>
+                        <label for="awesome">
+                            <input type="radio" id="awesome" name="Feedback" value="Awesome" required />
+                            <img src="./img/rates/awesome.png" />
+                            <span>Awesome</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-feedback">Send Feedback</button>
+                </form>
+            </div>
+            <!-- Experience End -->
         </div>
     </section>
     <!-- Contact End -->

@@ -71,6 +71,11 @@ section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart {
     transition: all 0.3s ease;
 }
 
+section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart:active,
+section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart:focus {
+    box-shadow: none;
+}
+
 section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart:hover {
     color: var(--darkgrey);
     background: transparent;

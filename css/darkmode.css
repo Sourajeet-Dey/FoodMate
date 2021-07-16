@@ -98,7 +98,7 @@ body.dark section.team div.team-container .team-members .team-card img {
 }
 
 body.dark section.team div.team-container .team-members .team-card h3 {
-    color: var(--mediumgrey);
+    color: var(--darkwhite);
 }
 
 body.dark section.team div.team-container .team-members .team-card p {
@@ -116,6 +116,10 @@ body.dark section.contact div.contact-container .contact_form form .form-group i
 body.dark section.contact div.contact-container .contact_form form .form-group textarea {
     color: var(--lightwhite);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
+}
+
+body.dark section.contact div.contact-container .contact_form form .form-check-group label span {
+    color: var(--lightwhite);
 }
 
 body.dark section.contact div.contact-container .contact_form form button.btn-submit:hover {
@@ -192,6 +196,122 @@ body.dark section.cartEmpty div.cartEmpty-container .cart_empty a.btn-cart:hover
 
 body.dark section.cartEmpty div.cartEmpty-container .cart_empty img {
     filter: invert(1);
+    opacity: 0.4;
+}
+
+/* ============================================================================== */
+/* Checkout Page Dark Theme */
+/* ============================================================================== */
+/* Checkout Dark Theme */
+
+body.dark div.checkout-container h2.cart-head span,
+body.dark div.user_details h2 {
+    color: var(--lightwhite);
+}
+
+body.dark div.checkout-details .coupon_add {
+    background: var(--darkmode);
+    color: var(--lightwhite);
+}
+
+body.dark div.checkout-details .coupon_add p {
+    color: var(--mediumgrey);
+}
+
+body.dark div.checkout-details .coupon_add p a {
+    color: var(--darkwhite);
+}
+
+body.dark div.checkout-details .coupon_add p a:hover {
+    color: var(--lightred);
+}
+
+/* ============================================================================== */
+/* Checkout Billing Dark Theme */
+
+body.dark div.user_details .billing form .form-group input,
+body.dark div.user_details .billing form .form-group textarea {
+    color: var(--lightwhite);
+    border: 2px solid rgba(155, 164, 180, 0.8);
+}
+
+body.dark div.user_details .billing form .form-group label {
+    color: var(--lightgrey);
+}
+
+body.dark div.user_details .billing form .form-group input:focus,
+body.dark div.user_details .billing form .form-group textarea:focus {
+    border: 2px solid var(--lightred);
+}
+
+body.dark div.user_details .billing form .form-group input:not(:placeholder-shown):not(:focus),
+body.dark div.user_details .billing form .form-group textarea:not(:placeholder-shown):not(:focus) {
+    border: 2px solid var(--lightgreen);
+}
+
+body.dark div.user_details .billing form .form-group input:read-only {
+    border: 2px solid var(--darkwhite);
+}
+
+body.dark div.user_details .billing form .form-group input:read-only::placeholder {
+    color: var(--lightwhite);
+}
+
+/* ============================================================================== */
+/* Checkout Payment Dark Theme */
+
+body.dark div.user_details .payment .methods {
+    background: var(--darkmode);
+}
+
+body.dark div.user_details .payment .pay_via p {
+    color: var(--lightgrey);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+body.dark div.user_details .payment .pay_via p:before {
+    border: 12px solid rgba(0, 0, 0, 0.1);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+body.dark div.user_details .payment .pay_via label i {
+    border: 3px solid rgba(32, 253, 238, 0.8);
+}
+
+body.dark div.user_details .payment .pay_via label i:after {
+    background: rgba(32, 253, 238, 1);
+}
+
+body.dark div.user_details .payment .pay_via label span {
+    color: var(--darkwhite);
+}
+
+body.dark div.user_details .payment .methods p.policy {
+    color: var(--lightgrey);
+}
+
+body.dark div.user_details .payment .methods p.policy a {
+    color: var(--mediumgrey);
+}
+
+body.dark div.user_details .payment .methods p.policy a:hover {
+    color: var(--lightred);
+}
+
+body.dark div.user_details .payment .methods hr {
+    border-top: 1.4px solid rgba(255, 255, 255, 0.3);
+}
+
+body.dark div.user_details .payment .methods .btn-place_order {
+    color: rgba(10, 80, 80, 1);
+    background: rgba(32, 253, 238, 1);
+}
+
+body.dark div.user_details .payment .methods .btn-place_order:hover {
+    color: var(--darkwhite);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 /* ============================================================================== */

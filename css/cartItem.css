@@ -66,11 +66,12 @@ section.cartItem div.cartItem-container .cart_checkout {
     bottom: -5px;
     margin: auto;
     padding: 12px 10px 14px;
-    background: var(--lightwhite);
+    background: var(--darkwhite);
     border-radius: 8px 8px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.1 ease;
 }
 
 /* Cart Amount Span */
@@ -131,6 +132,11 @@ section.cartItem div.cartItem-container .cart_checkout a.btn-payment {
     transition: all 0.3s ease;
 }
 
+section.cartItem div.cartItem-container .cart_checkout a.btn-payment:active,
+section.cartItem div.cartItem-container .cart_checkout a.btn-payment:focus {
+    box-shadow: none;
+}
+
 section.cartItem div.cartItem-container .cart_checkout a.btn-payment:hover {
     color: var(--lightblack);
     background: transparent;
@@ -149,11 +155,11 @@ section.cartItem div.cartItem-container .cart_checkout a.btn-payment:after {
 section.cartItem div.cartItem-container .cart_item {
     position: relative;
     margin: 40px auto;
-    background: var(--lightwhite);
+    background: var(--darkwhite);
     box-shadow: 0 2px 8px var(--lightgrey);
     border-radius: 20px;
     overflow: hidden;
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
 }
 
 section.cartItem div.cartItem-container .cart_item .item_name,

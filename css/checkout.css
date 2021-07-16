@@ -14,7 +14,7 @@ section.cartCheckout {
 
 div.checkout-container {
     position: relative;
-    margin: 60px auto;
+    margin: 60px auto -200px;
     padding: 50px 20px;
 }
 
@@ -102,7 +102,7 @@ div.checkout-details .coupon_add p a:hover {
     text-decoration: none;
 }
 
-/* Billing Details */
+/* User Details */
 
 div.user_details {
     position: relative;
@@ -115,6 +115,8 @@ div.user_details h2 {
     font-family: "Poppins", sans-serif;
     color: var(--lightblack);
 }
+
+/* Billing */
 
 div.user_details .billing form {
     position: relative;
@@ -169,20 +171,362 @@ div.user_details .billing form .form-group textarea:focus {
     border: 2px solid var(--lightred);
 }
 
-div.user_details
-    .billing
-    form
-    .form-group
-    input:not(:placeholder-shown):not(:focus),
-div.user_details
-    .billing
-    form
-    .form-group
-    textarea:not(:placeholder-shown):not(:focus) {
+div.user_details .billing form .form-group input:not(:placeholder-shown):not(:focus),
+div.user_details .billing form .form-group textarea:not(:placeholder-shown):not(:focus) {
     border: 2px solid var(--lightgreen);
 }
 
 div.user_details .billing form .form-group input:read-only {
     font-weight: 600;
     border: 2px solid var(--lightblack);
+}
+
+/* Payments */
+
+div.user_details .payment .methods {
+    position: sticky;
+    top: 15%;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px 0;
+    background: rgba(32, 253, 238, 0.6);
+    border-radius: 4px;
+    transition: all 0.1 ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ***** */
+
+div.user_details .payment .methods .pay_via {
+    margin: 5px 10px;
+    padding: 0 10px;
+    width: 100%;
+    height: auto;
+}
+
+div.user_details .payment .pay_via p {
+    position: relative;
+    margin: 8px 10px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: var(--lightblack);
+    background: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+}
+
+div.user_details .payment .pay_via p:before {
+    content: "";
+    position: absolute;
+    top: -44%;
+    left: 6%;
+    border: 12px solid rgba(255, 255, 255, 0.6);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+div.user_details .payment .pay_via label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.user_details .payment .pay_via label input {
+    display: none;
+}
+
+div.user_details .payment .pay_via label i {
+    width: 22px;
+    height: 22px;
+    margin: auto 10px;
+    padding: 2px;
+    border: 3px solid rgba(10, 150, 150, 1);
+    border-radius: 50%;
+}
+
+div.user_details .payment .pay_via label i:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 130, 130, 1);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+}
+
+div.user_details .payment .pay_via label input:checked + i:after {
+    transform: scale(1);
+}
+
+div.user_details .payment .pay_via label span {
+    margin: auto 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    color: var(--darkgrey);
+}
+
+/* ***** */
+
+div.user_details .payment .methods p.policy {
+    margin: 5px auto;
+    padding: 6px 14px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    color: var(--lightblack);
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+div.user_details .payment .methods p.policy a {
+    color: var(--darkblack);
+}
+
+div.user_details .payment .methods p.policy a:hover {
+    color: var(--lightred);
+    text-decoration: none;
+}
+
+div.user_details .payment .methods hr {
+    width: 100%;
+    height: auto;
+    border-top: 1.3px solid rgba(0, 0, 0, 0.2);
+}
+
+div.user_details .payment .methods .btn-place_order {
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 95%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: var(--darkwhite);
+    background: rgba(10, 130, 130, 1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+div.user_details .payment .methods .btn-place_order:hover {
+    background: rgba(10, 150, 150, 1);
+}
+
+/* Checkout Responsive Media */
+
+@media (max-width: 992px) {
+    div.user_details .billing form {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    div.checkout-details {
+        max-width: 100%;
+    }
+
+    div.user_details h2 {
+        font-size: 1.8rem;
+    }
+
+    div.checkout-details .coupon_add {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    div.checkout-details .coupon_add i,
+    div.checkout-details .coupon_add p {
+        margin: auto;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 376px) {
+    div.user_details .payment .methods p.policy {
+        line-height: 1.5rem;
+    }
+
+    div.user_details .payment .pay_via p:before {
+        top: -31%;
+        left: 14%;
+    }
+}
+
+/* Checkout Brand Just4Fun Popup */
+
+section.brand_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+section.brand_popup.popup_active {
+    opacity: 1;
+    visibility: visible;
+}
+
+section.brand_popup div.brand_popup {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    background: rgba(33, 34, 45, 1);
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(-30%) scale(0.95);
+    transition: all 0.3s ease;
+}
+
+section.brand_popup.popup_active div.brand_popup {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+section.brand_popup div.brand_popup i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    font-size: 1.4rem;
+    color: var(--darkwhite);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    line-height: 0;
+    cursor: pointer;
+}
+
+section.brand_popup div.brand_popup img {
+    margin: 10px auto;
+    width: 100px;
+    height: auto;
+}
+
+section.brand_popup div.brand_popup h4 {
+    margin: 5px auto 10px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: "Rancho", sans-serif;
+    color: var(--lightwhite);
+    letter-spacing: 2px;
+}
+
+section.brand_popup div.brand_popup p {
+    margin: 2px auto;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightgrey);
+    letter-spacing: 1px;
+}
+
+section.brand_popup div.brand_popup span {
+    margin: 10px auto 15px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.brand_popup div.brand_popup a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: var(--darkwhite);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+section.brand_popup div.brand_popup a:active,
+section.brand_popup div.brand_popup a:focus {
+    box-shadow: none;
+}
+
+section.brand_popup div.brand_popup a:nth-child(1) {
+    background: rgba(252, 128, 25, 1);
+    border-radius: 4px 0 0 4px;
+}
+
+section.brand_popup div.brand_popup a:nth-child(2) {
+    background: rgba(203, 32, 45, 1);
+    border-radius: 0 4px 4px 0;
+}
+
+section.brand_popup div.brand_popup a:nth-child(1):hover {
+    background: rgba(226, 114, 22, 1);
+}
+
+section.brand_popup div.brand_popup a:nth-child(2):hover {
+    background: rgba(184, 28, 41, 1);
+}
+
+@media (max-width: 992px) {
+    section.brand_popup div.brand_popup {
+        padding: 20px;
+    }
+
+    section.brand_popup div.brand_popup img {
+        width: 70px;
+    }
+
+    section.brand_popup div.brand_popup h4 {
+        font-size: 2.2rem;
+    }
+
+    section.brand_popup div.brand_popup p {
+        font-size: 1rem;
+    }
+
+    section.brand_popup div.brand_popup span {
+        margin: 10px auto;
+        padding: 8px;
+    }
+
+    section.brand_popup div.brand_popup a {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 422px) {
+    section.brand_popup div.brand_popup i {
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+
+    section.brand_popup div.brand_popup img {
+        width: 60px;
+    }
+
+    section.brand_popup div.brand_popup h4 {
+        font-size: 2rem;
+    }
+
+    section.brand_popup div.brand_popup p {
+        font-size: 0.9rem;
+    }
+
+    section.brand_popup div.brand_popup a {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
 }

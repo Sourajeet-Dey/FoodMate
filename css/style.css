@@ -29,7 +29,7 @@
 body {
     background: var(--darkwhite);
     font-family: "Poppins", sans-serif;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 body.dark {
@@ -51,7 +51,7 @@ body.dark {
 
     --lightgrey: #9ba4b4;
     --mediumgrey: #dcdcdc;
-    --darkgrey: #393e46;
+    --darkgrey: #3c434e;
 
     --lightyellow: #fddb3a;
     --lightred: #ff005c;
